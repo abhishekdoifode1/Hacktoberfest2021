@@ -1,0 +1,20 @@
+import random
+characters = ["STONE", "PAPER", "SCISSOR"]
+comp_input = (random.choice(characters))
+user_input = input(("Enter your move\n"))
+if comp_input == user_input:
+    print(comp_input, "CANNOT KILL", user_input, "\nTIE, TRY AGAIN")
+elif comp_input == "STONE" and user_input == "PAPER":
+    print(user_input, "KILLS", comp_input,"\nYOU WIN")
+elif comp_input == "STONE" and user_input == "SCISSOR":
+    print(comp_input, "KILLS", user_input, "\nYOU LOSE")
+elif comp_input == "PAPER" and user_input == "STONE":
+    print(comp_input, "KILLS", user_input, "\nYOU LOSE")
+elif comp_input == "PAPER" and user_input == "SCISSOR":
+    print(user_input, "KILLS", comp_input, "\nYOU WIN")
+elif comp_input == "SCISSOR" and user_input == "STONE":
+    print(user_input, "KILLS", comp_input, "\nYOU WIN")
+elif comp_input == "SCISSOR" and user_input == "PAPER":
+    print(comp_input, "KILLS", user_input, "\nYOU LOSE")
+else:
+    print("game over")
