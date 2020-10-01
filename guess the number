@@ -1,0 +1,24 @@
+import random
+
+winning_number = random.randint(1,100)
+
+print("WELCOME TO THE 'GUESS THE NUMBER' GAME")
+print("HOW TO PLAY :\n" "1) Computer will decide a number and you have to guess it.\n" "2) You have to enter a number.\n" "3) You will have only 5 chances to increase and decrease it.\n" "4) Computer will guide you to increase or decrease it.\n")
+i = 9
+while i>=1:
+    inp = int(input("Enter a Number\n"))
+    print(i, "attemts remaining")
+    i = i - 1
+    if i == 0:
+        print("0 attempts remaining\n" "GAME OVER")
+        break
+    elif inp > winning_number :
+        print("Decrease your number")
+    elif inp < winning_number:
+        print("Increase your number")
+    else :
+        print("You have successfully guessed the number in", 9  -i, "attempts")
+        break
+
+
+
