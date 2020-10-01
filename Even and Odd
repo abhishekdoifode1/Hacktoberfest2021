@@ -1,0 +1,23 @@
+# just enter the given no in the array
+def arrayEvenAndOdd(arr,n): 
+    i = -1
+    j= 0
+    while (j!=n): 
+        if (arr[j] % 2 ==0): 
+            i = i+1
+  
+              
+            arr[i],arr[j] = arr[j],arr[i] 
+              
+        j = j+1
+      
+    
+    for i in arr: 
+        print (str(i) + " " ,end='') 
+          
+
+if __name__=='__main__': 
+    #1 ,3, 2, 4, 7, 6, 9, 10 enter these in the below array
+    arr = [1 ,3, 2, 4, 7, 6, 9, 10 ]    
+    n = len(arr) 
+    arrayEvenAndOdd(arr,n)
