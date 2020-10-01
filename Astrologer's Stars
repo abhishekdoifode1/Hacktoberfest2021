@@ -1,0 +1,10 @@
+i = int(input("Enter the number of rows\n"))
+bool = int(input("Enter 1 for ascending pattern and 0 for descending order\n"))
+if bool == 1:
+    for i in range(0, i +1):
+     print("*" * i)
+elif bool == 0:
+    for i in range(i, 0, -1):
+      print("*" * i)
+else:
+    print(" Please, Enter only 1 and 0 for ascending and descending pattern respectivey")
