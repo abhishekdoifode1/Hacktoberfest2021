@@ -12,6 +12,18 @@ def simple_interest(p,t,r):
 	
 	print('The Simple Interest is', si) 
 	return si 
-	
+
+
+p_text = input ("Enter Principle: ")
+p = int(p_text)
+
+t_text = input ("Enter Time: ")
+t = int(t_text)
+
+r_text = input ("Enter Rate: ")
+r = int(r_text)
+
+simple_interest(p, t, r)
+
 # Driver code 
-simple_interest(8, 6, 8) 
+# simple_interest(8, 6, 8) 
