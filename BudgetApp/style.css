@@ -1,0 +1,23 @@
+h3 {
+    margin: 19px;
+    text-transform: uppercase;
+}
+#budget {
+    margin-top: 20px;
+    width: 100%;
+    height: 160px;
+    border: 1.5px solid green;
+    padding: 20px;
+    border-radius: 5px;
+}
+#expense {
+    margin-top: 30px;
+    width: 100%;
+    height: 230px;
+    border: 1.5px solid red;
+    padding: 20px;
+    border-radius: 5px;
+}
+i {
+    font-size: 300px;
+}
