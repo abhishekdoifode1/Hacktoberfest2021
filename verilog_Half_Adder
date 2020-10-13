@@ -1,0 +1,8 @@
+  module half_adder(a,b,sum,carry);
+  input a,b;
+  output sum,carry;
+  
+  and U_carry (carry,a,b);
+  xor U_sum (sum,a,b);
+  
+  endmodule
