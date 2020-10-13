@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+<body>
+    <h3 class="text-center m-5">Budget App</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="budget">
+                    <label>Please Enter Your Budget</label><br>
+                    <input type="number" class="form-control" id="bgt">
+                    <button class="btn btn-outline-success mt-2" onclick="cal()">Calculate</button>
+                </div>
+                <div id="expense">
+                    <label>Please Enter Your Expense Title</label><br>
+                    <input type="text" class="form-control" id="title">
+                    <label>Please Enter Your Expense Amount</label><br>
+                    <input type="number" class="form-control" id="xpense">
+                    <button class="btn btn-outline-danger mt-2" onclick="addExpense()">Add Expense</button>
+                </div>
+            </div>
+            <div class="col-md-7 mt-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3">
+                        <h5 class="text-center">Budget</h5>
+                        <i class="fa fa-money ml-2" style="font-size: 100px;"></i>
+                        <h1 class="text-success text-center" id="bugetval">0</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="text-center">Expenses</h5>
+                        <i class="fa fa-car ml-3" style="font-size: 100px;"></i>
+                        <h1 class="text-danger text-center" id="expenseval">0</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="text-center">Balance</h5>
+                        <i class="fa fa-dollar ml-5" style="font-size: 100px;"></i>
+                        <h1 class="text-dark text-center" id="balance">0</h1>
+                    </div>
+                </div>
+
+                <table class="table" id="tbl">
+                    <thead>
+                      <tr class="text-center mt-5">
+                        <th scope="col">Expense Title</th>
+                        <th scope="col">Expense Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script> 
+
+</body>
+</html>
