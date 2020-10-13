@@ -35,4 +35,6 @@ Enjoy the game its amazing and I am sure you'll love it.
  <li>For every line you complete you get 10 points.
 </ol>
 
-Thank you.
+You can view the repo at : https://github.com/achaljhawar/Tetris
+
+Thank you 😊.
