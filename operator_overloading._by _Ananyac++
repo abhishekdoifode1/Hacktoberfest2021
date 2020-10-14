@@ -1,0 +1,67 @@
+#include <iostream>
+
+using namespace std;
+class assignment_op
+{
+	private:
+		int number;
+	public:
+		assignment_op()
+		{	
+		    number=0;
+		}
+		assignment_op(int a)
+		{
+		    number=a; 
+		}
+		void get()
+		{	
+			cout<<"\n Enter the value: "; 
+			cin>>number ; 	    
+		}
+		void show()
+		{	
+			cout<<number<<endl;	
+		}
+		void operator  +=(assignment_op& a)
+		{
+			cout<<"\n The function operator += is invoked: ";
+			number+=a.number;
+		}
+
+		void  operator  *=(assignment_op& a)
+		{
+			cout<<"\n The function operator *= is invoked: ";
+			number*=a.number;
+		}	
+
+		void operator   -=(assignment_op& a)
+		{
+			cout<<"\n The function operator -= is invoked: ";
+			number-=a.number;
+		}
+};  
+
+int main()
+{
+		assignment_op ob1(10), ob2;
+		cout<<"\n The value of data in the object ob1 is: ";
+		ob1.show();
+		ob2.get();
+		cout<<"\n The value of data in the object ob2 is: ";
+		ob2.show();
+		ob1+=ob2;
+		cout<<"\n The value of data of object ob1 = ";
+		ob1.show();
+		ob1*=ob2;
+		cout<< "\n The value of data of object ob1 = ";
+		ob1.show();
+		ob1-=ob2;
+		cout<<"\n The value of data of object ob1 = ";
+		ob1.show();
+}
+
+
+
+
+
