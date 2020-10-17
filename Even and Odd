@@ -11,9 +11,15 @@ def arrayEvenAndOdd(arr,n):
               
         j = j+1
       
-    
+    print("Even")
     for i in arr: 
-        print (str(i) + " " ,end='') 
+        if(i%2==0):
+            print (str(i) + " ") 
+    print("Odd")
+    for i in arr: 
+        if(i%2!=0):
+            print (str(i) + " ") 
+    
           
 
 if __name__=='__main__': 
