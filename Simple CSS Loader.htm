@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple CSS Loader &middot; Ojas Barawal</title>
+	<!-- CSS -->
+	<style>
+		.spinner{
+			border: 30px solid #43AA8B;
+			border-radius: 50%;
+			border-top: 4px solid #b34356;
+			border-bottom: 30px solid #b34356;
+			bottom-right: 10px solid #b34356;
+			width: 120px;
+			height: 120px;
+			animation: spinner 0.7s ease-in-out infinite;
+		}
+
+		@keyframes spinner{
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="spinner"></div>
+</body>
+</html>
