@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Aurora</title>
+	<!-- <link rel="stylesheet" href="custom.css"> -->
+  <style>
+        
+/*Color Shadow - 3 */
+body {
+	margin: 0 auto;
+	padding: 0;
+	background: black;
+}
+
+/* 2 */
+.color-shadow-3 {
+	position: relative;
+	margin: 200px auto 0;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	/*reload gchrome*/
+	background: linear-gradient(0deg, black, #1d2982);
+}
+
+.color-shadow-3:after,
+.color-shadow-3:before {
+	content: '';
+	/*content akhir*/
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: linear-gradient(60deg, #ffff00, #ff0000, #00ff00, #ffff00,
+		#ff0000, #fb0094, #0000ff, #ffff00, #ff0000, #fb0094, #0000ff);
+	/* Reload gchrome ketika ketik warna ke 3 */
+	background-size: 200%;
+	/* background-size tambahi 100%*/
+	border-radius: 50%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: 5;
+	animation: transite 2s infinite;
+}
+
+.color-shadow-3:after {
+	filter: blur(30px);
+}
+
+@keyframes transite {
+	0% {
+		background-position: 200% 0;
+	}
+}
+  </style>
+</head>
+<body>
+	<div class="color-shadow-3">
+		
+	</div>
+</body>
+
+
+</html>
