@@ -1,0 +1,5 @@
+type: theory
+custom_name: Dispatcher.Unconfined
+files:
+- name: src/App.kt
+  visible: true
