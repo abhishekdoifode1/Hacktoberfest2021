@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+
+	<!--Load hover.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+
+	<!--Load CSS File-->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+	<title>Charity Base: Donate Page</title>
+</head>
+
+<body id="bodyColor">
+	<header>
+		<nav class="navbar navbar-expand-sm  navbar-light fixed-top">
+
+			<a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
+
+			<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
+
+            <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article>
+
+        <!--Carousel for Africa and Asia-->
+
+        <section>
+            <div id="AsiaAfricaCharityCarouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 charityAsiaPic1" title="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 charityAfricaPic" title="Second slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 charityAsiaPic2" title="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#AsiaAfricaCharityCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+             </a>
+                <a class="carousel-control-next" href="#AsiaAfricaCharityCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </section>
+
+        <!-- Main Heading and information of the web page -->
+        <section>
+            <div class="container">
+                <h1 class="charitiesH1 text-center header">Charities</h1>
+                <p class="donatePageTextColor text-center">You will be directed to the pages of the charity organisations. One to three of popular charity organisations are presented for each of the countries that are below. Also, I do not provide donation services.</p>
+                <p class="donatePageTextColor text-center">A calculator can be used to calculate how much you would like to donate by clicking on the calculator icon in the sidebar on the left-hand side of the web page.</p>
+            </div>
+        </section>
+
+        <!--Calculator-->
+        <section id="calculator-wrapper">
+            <div class="calculatorSection container">
+                <div class="justify-content-sm-center row">
+                    <div class="col-12 text-center donatePageTextColor calcTextBG" id="calculatorSectionHeader">
+                        <h5>Click & Hold Here To Move. Calculate How Much You Would Like to Donate</h5>
+                    </div>
+                    <div class="col-12 calc-no-padding">  
+                        <form>
+                            <input type="text" class="screen" />
+                        </form>
+                    </div>
+                </div>
+       
+
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- Symbol buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="0">0</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="1">1</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="2">2</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="+">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- number buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="3">3</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="4">4</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="5">5</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="-">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- number buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="6">6</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="7">7</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="8">8</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="*">x</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- number buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="9">9</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num=".">.</button>
+                            <button type="button" class="btn-clear calcBtnStyle calcBtnRed">C</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="/">/</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <button type="button" class="btn-equal calcBtnStyle calcBtnGreen">=</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Charities for Africa and Asia-->
+
+        <section id="AsiaAfricaSection">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!--Charities for Asia-->
+                    <div class="col-sm-6">
+                        <div class="text-center donatePageTextColor">
+                            <h2>Asia:</h2>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Syria</button>
+                                    <div class="charity-text text-center">
+                                        <h3>Muslim Global Relief</h3>
+                                        <p>
+                                            The Muslim Global Relief has been awarded as the "Charity Of The Year 2018" by the National British Muslim Awards. Syria has been in war for years now and people are still dying and suffering everyday. This has caused 13.1 million of them to be in need,
+                                            making it to the largest humanitarian crisis of all time. Eastern Ghouta has been lead to its near total destruction and 4,000,000 inhabitants are therefore suffering and unable too flee. At the same time, they
+                                            are at risk to be bombarded at any time and see people being crushed under heavy bricks! Through your donation, you have a helping hand to save lives!
+                                        </p>
+                                        <a href="https://www.muslimglobalrelief.org/syria-emergency-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvUScWalFRhKSaO9QfHb4Yqc6ELL2ZnKetlWrllvhLzkHA6GlKolYoaAh5HEALw_wcB" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Indonesia</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Save the Children</h3>
+                                        <p>Indonesia has suffered a lot from earthquakes, tsunamis, volcanic eruptions, floods and political instability. The economy is struggling nad the poverty is widespreaded. Malnutrition causes tons of children to have
+                                            stunted growth, many of them die under the age of five and child labour is still going on there! However, you can make a change and help those children to have educations and a better future ahead of them!</p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/asia/indonesia" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Uzbekistan</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>SOS Childen's Villages International</h3>
+                                        <p>Due to an unemployment rate of 70%, many people are caused to leave the country. The fact that Uzbekistan lost subsidies from Russia in 1991, caused their economy to decline drastically, as they are mostly based
+                                            on exporting cotton. Educational reforms have been processed very slowly and children often have to quit school, in order to work in the agricultural areas. As a result, many Western cloth producers have decided
+                                            to boycott cotton from there.
+                                        </p>
+
+                                        <a href="https://www.sos-childrensvillages.org/where-we-help/asia/uzbekistan" target="_blank" class="btn donateButtonStyle">Donate here</a>
+
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Yemen</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Muslim Global Relief</h3>
+                                        <p>
+                                            The Muslim Global Relief has been awarded as the "Charity Of The Year 2018" by the National British Muslim Awards. With war and terrible human right abuses, Yemen looks like it is going to be in the worst humanitarian crisis after the last 50 years! Immediate
+                                            help is needed, as the poverty rate is high and millions of people's lives are at risk! You can help now!
+                                        </p>
+                                        <a href="https://www.muslimglobalrelief.org/yemen-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvNFvUQUUdqdHrAim-qYZFtI6PKp01Pg_wEmg5umdZLj-Z_PG3wj3waAkYiEALw_wcB" target="_blank" class="btn donateButtonStyle">Donate here</a>
+
+                                    </div>
+
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Kyrgyztan</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Mercy Corps</h3>
+                                        <p>Kyrgyztan is one of the poorest countries in Central Asia, as the collapse of the Soviet Union caused its economy to drastically decline. The economic growth is limited because of the poor infrastructure, organised
+                                            crimes and corruption, which causes the poverty rate, unemployment rate and inflation to rise. In addition, ethnic tensions and food insecurity persists however, you could make a change by donating!</p>
+                                        <a href="https://www.mercycorps.org.uk/countries/kyrgyzstan" target="_blank" class="btn donateButtonStyle">Donate here</a>
+
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Bangladesh</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Safer World</h3>
+                                        <p>Bangladesh has a very low trust in security and justice executions, as there lots of political violence, corruption, organised crimes, gender-based violence and more conflicts still persist. </p>
+                                        <a href="https://www.saferworld.org.uk/bangladesh/bangladesh?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvOdMX2IhVG6Mf2eu34327kK0FJ6bFemejU_f3AIDNUi65qwB7FZTQaAhUbEALw_wcB" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Tajikistan</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Caritas</h3>
+                                        <p>This Catholic Church, helped people around the world and assists countries including Tajikistan. They even cleaned water for around 9000 people in Jomi, Tajikistan and provide medical help to children's hospitals.
+                                            Children with various illnesses, such as cancer, receive their help and the Church aims to spread love, through their small projects.</p>
+
+                                        <a href="https://www.caritas.org/where-caritas-work/asia/tajikistan/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Pakistan</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>The Fred Hollows Foundation</h3>
+                                        <p>
+                                            Around two million people in Pakistan are blind in both eyes, so this organisation tries to reach as many of them as possible, in order to cure their eyesights. They are currently working in four provinces of Pakistan, if you would like to donate or find
+                                            out more, please click the button below!
+                                        </p>
+                                        <a href="https://www.hollows.org/au/what-we-do/where-we-work/south-asia/pakistan?gclid=Cj0KCQjwov3nBRDFARIsANgsdoE1Y0475e9NddjyxJi1CfwnKv1WTbiz2UFEmKg6DSXFR4sg3VP4d4UaAl3IEALw_wcB&gclsrc=aw.ds" target="_blank"
+                                            class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">India</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Educate for Life</h3>
+                                        <p>This organisation helps Indians by building schools in rural areas and providing education, healthcare, and community work for them. To find out more and donate please click on the button below.</p>
+                                        <a href="https://www.educateforlife.org.uk/?gclid=Cj0KCQjwov3nBRDFARIsANgsdoHuIokzfAvWhEunEczs1grnd4VH6rh0tflLgN2qm_stAsozX9pVWR8aApWpEALw_wcB" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Charities for Africa-->
+
+                    <div class="col-sm-6">
+                        <div class="text-center donatePageTextColor">
+                            <h2>Africa:</h2>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Democratic Republic of Congo</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Save the Children</h3>
+                                        <p>The Democratic Republic of Congo has the lowest GDP per capita, meaning that the standard of living of their citizens country is very low. The economic growth and development requires strong improvement, as
+                                            67% of girls cannot read or write, while 32% of children are engaged in childlabor! Overall, 87% of people in the Democratic Republic of Congo are under the poverty line. However, you can make a change by clicking
+                                            the button below and donating any amount of money to hopefully change a person's life.</p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/africa/democratic-republic-of-congo" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Mozambique</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Care and Save the Children</h3>
+                                        <p>
+                                            There are 27% of children in Mozambique that are not able to receive any education, 22% are caught into child labour, 55% of girls have trouble in reading and writing and 46% of people live in poverty! At the moment, Save the Children takes care of emergency
+                                            situations in Mozambique, as it has been by multiple powerful cyclones lately, resulting them being in an emergency situation! Care helps women in Mozambique and protects them from being abused in various ways
+                                            and helps refugees, children and people affected by natural disasters. You could even help to protect Nigerian children, as many school kids have reportedly been sold for as little as $12!
+
+                                        </p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/africa/mozambique" target="_blank" class="btn donateButtonStyle">Donate to 'Save the Children'</a>
+                                        <p>OR</p>
+                                        <a href="https://www.care.org/country/mozambique" target="_blank" class="btn">Donate to 'Care'</a>
+
+                                        <h3>Aid for Africa</h3>
+                                        <p>For more charities for Mozambique, find other charities that take care of wildlife or help people with water, poverty and education by clicking on the button below.</p>
+                                        <a href="https://www.aidforafrica.org/?cat=120&type=member-charities" target="_blank" class="btn donateButtonStyle">Donate to 'Aid for Africa'</a>
+
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Nigeria, Uganda and South Sudan</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Child Voice</h3>
+                                        <p>
+                                            Around 30,000 children in Uganda used to be forced to become soldiers. Eventhough, the is over now, many people are still traumatized from the impact of the war and the poverty that they live in. ChildVoice assists those people and give girls and children
+                                            safe places to live in, counselling, education and vocational skills. Also, refugees that have fled from the civil war in South Sudan receive their help, as well. As the civil war and tribal conflicts still
+                                            continue, since 2016, in South Sudan, people are fleeing for their lives to Uganda. Therefore ChildVoice is helping girls to get education and assists refugees with emotional healing, life skill training, hygiene
+                                            classes and more. A group of terrorists, known as Boko Haram infamously kidnapped schoolgirls in 2014 and still attacks more places in the northeastern part country, while manipulating a religion that they claim
+                                            to follow. At the mean time, Muslims and Christians aim to live together in peace, as many of them live in regions that are nearby each other, in Nigeria. Therefore, Child Voice helps the refugees, who escaped
+                                            from Boko Haram and takes care of the traumatized people, which are mostly affected women and children. So, ChildVoice is trying their best to help people in Uganda, South Sudan and Nigeria, in order to provide
+                                            a better future for the people and to relieve them physically and mentally.
+                                        </p>
+                                        <a href="https://childvoice.org/where/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgsudzI2Kw11ir_0bA5hQE_BUiYRBA0573u7A-5d6rHbzD73Xn0X5SQaAnezEALw_wcB#nigeria" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Zimbabwe</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>International Rescue Commitee</h3>
+                                        <p>
+                                            Zimbabwe suffer from drought and a weak economy. It all started in 2008, when the cholera outbreak cause around 100,000 people to pass away, the drought that happened in 2016 and Cyclone Idai, which is the worst natural disaster of 2019. Therefore, the
+                                            International Rescue Commitee aims to assist them for a better future, to offer them resources that are required to survive and to rebuild their lives.</p>
+                                        <a href="https://www.rescue-uk.org/country/zimbabwe?gclid=CjwKCAjw__fnBRANEiwAuFxETzsg0b6hsHly42kNSUhj5sHudZnrvFQmF1xaWccGOKwNjubah3RAgBoC8xEQAvD_BwE" target="_blank" class="btn donateButtonStyle">Donate here</a>
+
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Malawi</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Ripple Africa</h3>
+                                        <p>
+                                            Ripple Africa helps people in Malawi to have education and health care, and they even make sure that the environment stays healthy, as they take care of forest conservation, fish conservation, fuel efficient cookstoves, tree planting and more. They even
+                                            built pre-schools, primary schools and secondary school and they also take care of disabled people, the assistance of family planning and more! Help them keep improving their assistance in Malawi by donating
+                                            and find more information on why they require help and more by clicking the button below.
+                                        </p>
+                                        <a href="https://www.rippleafrica.org/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Somalia</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Save the Children</h3>
+                                        <p>
+                                            Children in Somalia are not able to go to school, as they have to look for water because of the drought. Around 49% of children are engaged in child labour and do not receive education. Moreover, 133 out of 1000 children pass away before they reach the
+                                            age of five. Save the Children has been helping around 2.7 million people in Somalia. If you want to contribute to the required support, please click on the button below.
+                                        </p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/africa/somalia" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">South Africa</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Greater Good</h3>
+                                        <p>Find charities that support education, the environment, unemployed people and more in South Africa, by clicking on the button below. </p>
+                                        <a href="http://www.greatergoodsa.co.za/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Botswana</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>SOS Children's Villages</h3>
+                                        <p>In Botswana, AIDS has been a big issue, which causes many orphans to require parental support. In addition, although the economic growth is going well, there is a high poverty rate and children are malnourished.
+                                            Find out more and donate by clicking the button below.</p>
+                                        <a href="https://www.sos-childrensvillages.org/where-we-help/africa/botswana" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Carousel for Europe and South America-->
+
+        <section id="SAEuropeSection">
+            <div id="SouthAmericaEuropeCarouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#SouthAmericaEuropeCarouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#SouthAmericaEuropeCarouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#SouthAmericaEuropeCarouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 charityEuropePic1" title="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 charitySAPic" title="Second slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 charityEuropePic2" title="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#SouthAmericaEuropeCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+                <a class="carousel-control-next" href="#SouthAmericaEuropeCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </section>
+
+        <!--Charities for Europe and South America-->
+
+        <section id="SAEuropeCharities">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!--Charities for South America-->
+
+                    <div class="col-sm-6">
+                        <div class="text-center donatePageTextColor">
+                            <h2>South America:</h2>
+
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Bolivia</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Charity: Water and Save the Children</h3>
+                                        <p>Bolivia is the poorest country in South America with 39% of people living in poverty and 26% being engaged in child labour. They require your assistance to receive better education, medical care and enough food.
+                                            Please click the buttons below to find out more and to donate!</p>
+                                        <a href="https://www.charitywater.org/our-projects/south-america/bolivia" target="_blank" class="btn donateButtonStyle">Donate to 'Charity: Water'</a>
+                                        <p>OR</p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/latin-america/bolivia" target="_blank" class="btn donateButtonStyle">Donate to 'Save the Children'</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Guyana</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Guyana Medical Relief</h3>
+                                        <p>
+                                            Guyana is the second poorest country in South America. People require help to get medical aid because of a shortage of dollars to provide everyone with medical support. Therefore, Guyana Medical Relief helps them through shipments and with your donation
+                                            you can help more people.</p>
+                                        <a href="https://guyanamedicalrelief.com/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Ecuador</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>We</h3>
+                                        <p>
+                                            There are man indegenous people in Ecuador, who have limited access to clean water, education, health care, economic opportunities and more. More than a quarter of the population suffers from chronic malnutrition, while more than half of the indigenous
+                                            people live in poverty. It takes hours for children to get to school and many children shall stay home to do chores in the household. So, the organisation called 'We' built schools for children to have better
+                                            access to educated, and they help indigenous people to have easier access to clean water, health care programmes and alternative ways of income. For more information and to donate please click the button below.
+                                        </p>
+                                        <a href="https://www.we.org/we-villages/where-we-work/ecuador/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Haiti</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Haiti-Now</h3>
+                                        <p>In Haiti, 250,000 out of a million live in social isolation, extreme poverty, they do not have enough access to food and cannot have any education. They get emotionally, physically and sexually abused, as they do
+                                            not have full citizenship or fundamental human rights or they are absent from the family. Therefore, Haiti-Now works on making solutions for mental and physical healthcare, education, housing and enterpreneurial
+                                            development.
+                                        </p>
+                                        <a href="https://www.haiti-now.org/?gclid=CjwKCAjw__fnBRANEiwAuFxET2zCLeE2kcl3GCy02NX7mQCljwT0KdOlE_0BkoV2Wk1QZ-ocFomxcBoCosQQAvD_BwE" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Brazil</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Action Aid</h3>
+                                        <p>Action Aid educates children, who live in slums, protect girls of even as young as 12 years old, from working as prostitutes and help people and the environment with drought. For more information and to donate,
+                                            please click the button below.</p>
+                                        <a href="https://www.actionaid.org.uk/about-us/where-we-work/brazil" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Charities for Europe-->
+
+                    <div class="col-sm-6">
+                        <div class="text-center donatePageTextColor">
+                            <h2>Europe:</h2>
+
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Moldova</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Outreach Moldova</h3>
+                                        <p>
+                                            Outreach Moldova helps orphans in Moldova that require parental support. They believe that every child has the right to medical care, education, social supports, rehabilitation services, essential care, many other kinds of supports. For more information
+                                            and to donate please click the button below!
+                                        </p>
+                                        <a href="https://www.outreachmoldova.org/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Ukraine</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Ukraine Charity</h3>
+                                        <p>
+                                            This organisation is located in London and supports multiple causes, but their main focus is to help orphans, young adults and underprivilaged children in Ukraine. To find more information and to donate, please click the button below!
+                                        </p>
+                                        <a href="https://www.ukrainecharity.org/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Kosovo, Serbia</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>SOS Children's Villages</h3>
+                                        <p>After refugees fled from Albania in the year 1999, SOS Children's Villages offers kindergartens, family-based care and social centers in the capital city of Pristina. Click on the button below to find out more and
+                                            to donate!
+                                        </p>
+                                        <a href="https://www.sos-childrensvillages.org/where-we-help/europe/kosovo" target="_blank" class="btn donateButtonStyle">Donate here</a>
+
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Carousel for Oceania and North America-->
+
+        <section id="NAAusCarousel">
+            <div id="AustraliaNACharityCarouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#AustraliaNACharityCarouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#AustraliaNACharityCarouselIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 charityRedCrossPic" title="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 disasterReliefRedCrossPic" title="Second slide">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#AustraliaNACharityCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+             </a>
+                <a class="carousel-control-next" href="#AustraliaNACharityCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </section>
+
+        <!--Charities for Oceania and North America-->
+
+        <section id="NAAusCharities">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <!--Charities for North America-->
+
+                        <div class="text-center donatePageTextColor">
+                            <h2>North America:</h2>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Mexico</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Misión Mèxico</h3>
+                                        <p>This charity organisation focuses on helping orphans and children, who got abused, neglected or abandoned, and a lot of them have backgrounds of extreme poverty. Please click the button below for more information
+                                            and to donate!</p>
+                                        <a href="http://lovelifehope.com/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Detroit, Michigan, USA</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>McLaren</h3>
+                                        <p>Find charities that support girls, education, parents and more in Michigan by clicking on the button below!</p>
+                                        <a href="https://detroit.citymomsblog.com/detroit-charities/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">USA</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>American Red Cross</h3>
+                                        <p>This is organisation helps people that were affected from natural disasters. Please find out more and donate by clicking on the button below!</p>
+                                        <a href="https://www.redcross.org/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Charities for Oceania-->
+
+                    <div class="col-sm-6">
+                        <div class="text-center donatePageTextColor">
+                            <h2>Oceania:</h2>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Australia - Illnesses and Injuries</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Ronald McDonald House Charities</h3>
+                                        <p>This organisation helps people with injuries or illnesses and supports their families to stay close. Please donate and find out more by clicking on the button below!</p>
+                                        <a href="http://www.rmhc.org.au/tax2019?gclsrc=aw.ds&gclid=Cj0KCQjwov3nBRDFARIsANgsdoGNpLUkE8DFjiOWXXlHrwg68jQDcvTxap9pOu77qWQIL04nghRgHhgaAvZVEALw_wcB&gclsrc=aw.ds" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse">Australia - Red Cross</button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Australian Red Cross</h3>
+                                        <p>
+                                            This charity organisation helps people in need, in Austalia. You can find more information and support them by donating, through clicking on the button below!
+                                        </p>
+                                        <a href="https://www.redcross.org.au/" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!-- Aside -->
+    <aside>
+        <div>
+            <ul class="social-media-button d-none d-sm-block">
+                <li class="calculator-aside"><div class="sideCalculator" id="calcBtn"><i class="fa fa-calculator"></i></div></li>
+                <li class="facebook-aside"><a href="http://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li class="twitter-aside"><a href="http://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="youtube-aside"><a href="http://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li class="instagram-aside"><a href="http://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-center">
+                    <ul class="footer-list">
+                        <li><a href="tel: 12 3456 7890" class="footer-link">Phone number: 12 4567 7890</li>
+                        <li><a href="contact.html" class="footer-link">Send Me a Message</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 text-center">
+                    <ul class="footer-list">
+                        <li><a href="donate.html" class="footer-link">Donate</a></li>
+                        <li><a href="map.html" class="footer-link">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-block d-sm-none">
+            <hr>
+
+            <!--Footer Social Media Icons-->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="social-media-icons-footer">
+                            <li class="facebook-footer"><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="twitter-footer"><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="youtube-footer"><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li class="instagram-footer"><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/donate.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
