@@ -1,0 +1,98 @@
+$date
+  Mon Sep  7 19:07:08 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module numeric_bit $end
+$upscope $end
+$scope module adder4bits_tb $end
+$var reg 4 ! a_in[3:0] $end
+$var reg 4 " b_in[3:0] $end
+$var reg 4 # s_out[3:0] $end
+$var reg 1 $ c_out $end
+$scope module dut $end
+$var reg 4 % a[3:0] $end
+$var reg 4 & b[3:0] $end
+$var reg 4 ' sum[3:0] $end
+$var reg 1 ( carry_out $end
+$var reg 5 ) sum_c[4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000 !
+b0000 "
+b0000 #
+0$
+b0000 %
+b0000 &
+b0000 '
+0(
+b00000 )
+#1000000
+b0001 !
+b0001 "
+b0010 #
+b0001 %
+b0001 &
+b0010 '
+b00010 )
+#2000000
+b1000 !
+b1000 "
+b0000 #
+1$
+b1000 %
+b1000 &
+b0000 '
+1(
+b10000 )
+#3000000
+b1111 !
+b0001 "
+b1111 %
+b0001 &
+#4000000
+b1110 !
+b0111 "
+b0101 #
+b1110 %
+b0111 &
+b0101 '
+b10101 )
+#5000000
+b0111 !
+b0011 "
+b1010 #
+0$
+b0111 %
+b0011 &
+b1010 '
+0(
+b01010 )
+#6000000
+b1100 !
+b0101 "
+b0001 #
+1$
+b1100 %
+b0101 &
+b0001 '
+1(
+b10001 )
+#7000000
+b0000 !
+b0000 "
+b0000 #
+0$
+b0000 %
+b0000 &
+b0000 '
+0(
+b00000 )

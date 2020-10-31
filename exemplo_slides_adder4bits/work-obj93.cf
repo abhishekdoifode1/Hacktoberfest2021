@@ -1,0 +1,7 @@
+v 4
+file . "adder4bits_tb.vhdl" "24244b249a2325baa542d86141119f86bada5af7" "20200907220656.623":
+  entity adder4bits_tb at 1( 0) + 0 on 29;
+  architecture adder4bits_tb_arch of adder4bits_tb at 4( 40) + 0 on 30;
+file . "adder4bits.vhdl" "26ee759c2307c98abaffefda73951966c849c244" "20200907220656.623":
+  entity adder4bits at 1( 0) + 0 on 27;
+  architecture adder4bits_arch of adder4bits at 13( 261) + 0 on 28;
