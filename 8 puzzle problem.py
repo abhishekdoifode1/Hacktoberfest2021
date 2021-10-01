@@ -1,3 +1,12 @@
+'''
+great work brother !
+keep it up 
+
+'''
+
+
+
+
 initial_state = [[1,2,3],[0,4,6],[7,5,8]]
 
 final_state = [[1,2,3],[4,5,6],[7,8,0]]
