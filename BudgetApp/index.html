@@ -19,6 +19,25 @@
                     <input type="number" class="form-control" id="bgt">
                     <button class="btn btn-outline-success mt-2" onclick="cal()">Calculate</button>
                 </div>
+                
+            <!-- Category of expense -->
+            <!-- Default is General -->
+            <div class="field">
+                <label class="label">Category</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="expense-form-category">
+                            <option>General</option>
+                            <option>Applicances</option>
+                            <option>Food</option>
+                            <option>Entertainment</option>
+                            <option>Bills</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                
                 <div id="expense">
                     <label>Please Enter Your Expense Title</label><br>
                     <input type="text" class="form-control" id="title">
