@@ -3,7 +3,9 @@
 #include<string.h>
 
 #define MAX_DEPTH 100
-
+.
+	.
+	
 int solution[MAX_DEPTH]; // list of move to solve the 8 puzzle
 int nbMinMoves; // number of minimal moves to solve the problem
 int grid[9]; // grid representing puzzle 
