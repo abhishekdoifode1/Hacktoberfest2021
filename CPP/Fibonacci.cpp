@@ -1,22 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int main () {
-     int i, N, primo=1, secondo=1, terzo;
+int main() {
+    int t1 = 0, t2 = 1, nextTerm = 0, n;
 
-     do {
-	    cout<<"Quanti numeri vuoi inserire?: ";
-	    cin>>N;
-      } while (N<3);
-     
-     cout<<primo<<","<<secondo;
+    cout << "Enter a number: ";
+    cin >> n;
 
-     for(i=2;i<N;i++){
-          terzo=primo+secondo;
-          primo=secondo;
-          secondo=terzo;
-          cout<<","<<terzo;
-     }
+    // displays the first two terms which is always 0 and 1
+    cout << "Fibonacci Series: " << t1 << ", " << t2 << ", ";
 
+    nextTerm = t1 + t2;
+
+    while(nextTerm <= n) {
+        cout << nextTerm << ", ";
+        t1 = t2;
+        t2 = nextTerm;
+        nextTerm = t1 + t2;
+    }
     return 0;
 }
