@@ -1,0 +1,246 @@
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.btn-float {
+    z-index: 1000;
+    padding: 4px 8px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-outline-warning {
+    color: #ff7235;
+    border-color: #ff7235;
+}
+
+.btn-outline-warning:hover {
+    color: #fff;
+    background-color: #ff7235;
+    border-color: #ff7235;
+}
+
+.btn-outline-warning:focus, .btn-outline-warning:active {
+    color: #fff !important;
+    background-color: #ff7235 !important;
+    border-color: #ff7235 !important;
+}
+
+.btn-outline-light {
+    color: #ff7235;
+    background-color: #fff;
+}
+
+.btn-outline-light:hover {
+    color: #ff7235;
+    background-color: rgb(230, 230, 230);
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #ff7235;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #f85b18;
+}
+
+.btn-warning:active, .btn-warning:focus {
+    color: #fff !important;
+    background-color: #f85b18 !important;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 36px !important;
+    }
+    h2 {
+        font-size: 34px !important;
+    }
+    h3 {
+        font-size: 32px !important;
+    }
+    .hero-section p {
+        font-size: 18px !important;
+    }
+    .text-center-sm {
+        text-align: center !important;
+    }
+    .img-section {
+        width: 90%;
+        margin-top: 0px !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 48px !important;
+    }
+    h2 {
+        font-size: 40px !important;
+    }
+    h3 {
+        font-size: 36px !important;
+    }
+    .bg-section {
+        margin-top: 100px;
+    }
+    .img-section {
+        width: 90%;
+        margin-top: 0px !important;
+    }
+    .text-center-md {
+        text-align: center !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 60px !important;
+    }
+    h2 {
+        font-size: 54px !important;
+    }
+    h3 {
+        font-size: 48px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h3 {
+        font-size: 48px !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h3 {
+        font-size: 48px !important;
+    }
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #292830 !important;
+}
+
+.nav-item a:hover {
+    color: #ff7235 !important;
+}
+
+/* HERO */
+
+.hero-section {
+    min-height: 85vh;
+}
+
+.hero-section p {
+    font-size: 24px;
+    font-weight: 400 !important;
+    color: #bdbdbd;
+}
+
+.bg-section {
+    background: url(../img/bg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* height: 65vh; */
+    /* margin-top: 40px !important; */
+}
+
+.text-gray {
+    color: #bdbdbd;
+}
+
+.link-warning {
+    color: #ff7235;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.link-warning:hover {
+    color: #fc5710;
+}
+
+.p-17 {
+    font-size: 17px !important;
+}
+
+.p-16 {
+    font-size: 16px !important;
+}
+
+.border-top-yellow {
+    border-top: 12px solid #ffbe21;
+}
+
+.carousel-indicators li {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: #404040;
+}
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.img-section {
+    margin-top: -100px;
+}
+
+footer .brand {
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #292830;
+}
+
+footer a.brand:hover {
+    color: #292830 !important;
+}
+
+footer a {
+    font-size: 18px;
+    color: #292830;
+}
+
+footer a:hover {
+    color: #fc5710;
+}
+
+.border-gray {
+    border-color: #BDBDBD !important;
+}
