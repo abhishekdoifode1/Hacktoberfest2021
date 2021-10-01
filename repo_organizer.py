@@ -25,7 +25,7 @@ shortforms = {'js':'JavaScript-programs','kt':'Kotlin-programs','py':'Python-pro
 for i in lang.keys():
     if len(lang[i])>=3:
         for j in lang[i]:
-            if i in shortforms:
+            if i in shortforms and j!='repo_organizer.py':
                 if not os.path.exists(f'Hacktoberfest2021-2/{shortforms[i]}'):
                     os.makedirs(f'Hacktoberfest2021-2/{shortforms[i]}')
                 os.replace(f"Hacktoberfest2021-2/{j}",f"Hacktoberfest2021-2/{shortforms[i]}/{j}")
