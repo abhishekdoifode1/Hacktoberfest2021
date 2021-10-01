@@ -1,0 +1,198 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 475.98px) {
+    .text-center-sm {
+        text-align: center !important;
+    }
+    h1 {
+        font-size: 40px !important;
+    }
+    h2 {
+        font-size: 30px !important;
+    }
+    .bg-hero {
+        height: 650px !important; /* You must set a specified height */
+    }
+    .img-preview {
+        height: 200px;
+    }
+    .bg-gradient {
+        height: 1880px !important;
+    }
+    .bg-cta-svg {
+        height: 350px; /* You must set a specified height */
+        width: auto !important;
+    }
+    .bg-gradient-2 {
+        height: 1650px !important;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 575.98px) {
+    .text-center-sm {
+        text-align: center !important;
+    }
+    .bg-cta-svg {
+        height: 350px; /* You must set a specified height */
+        width: auto !important;
+    }
+    .bg-gradient {
+        height: 1800px !important;
+    }
+    .bg-gradient-2 {
+        height: 1850px !important;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .text-center-md {
+        text-align: center !important;
+    }
+    .bg-gradient {
+        height: 1780px !important;
+    }
+    .bg-gradient-2 {
+        height: 1950px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .bg-gradient-2 {
+        height: 800px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Mulish", sans-serif;
+}
+
+.btn-float {
+    z-index: 1000;
+    padding: 4px 8px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bg-hero {
+    background: url(../img/bg-hero.png);
+    height: 680px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.a-hero:hover {
+    color: #28a745 !important;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.text-white-80 {
+    color: #e5e5e5 !important;
+    font-size: 17px;
+}
+
+.bg-gradient {
+    background: url(../img/bg-gradient.png);
+    height: 800px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-green {
+    background-color: #1c3a27;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    max-width: 90%;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #1c3a27;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.caption-small {
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #1c3a27;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bg-cta {
+    margin-top: 100px !important;
+    background: url(../img/bg-cta.png);
+    height: 650px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-cta-svg {
+    position: relative;
+    background: url(../img/bg-cta-svg.png);
+    height: 650px; /* You must set a specified height */
+    width: 716px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-gradient-2 {
+    background: url(../img/bg-gradient.png);
+    height: 680px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-light-green {
+    background-color: #f4f9f8;
+}
+
+.p-14 {
+    font-size: 14px;
+}
