@@ -1,4 +1,4 @@
 # Program to find the ASCII value of the given character
 
-c = 'p'
-print("The ASCII value of '" + c + "' is", ord(c))
+input_char = input("Enter a character: ")
+print("The ASCII value of '" + input_char + "' is", ord(input_char))
