@@ -93,17 +93,19 @@
     padding: 10px;
     float: left;
     font-size: 16px;
+    height:3em;
   }
   
   /* Style the "Add" button */
   .addBtn {
-    padding: 10px;
+    height: 3em;
+    padding: 0.75em 10px;
     width: 25%;
     background: gray;
     color: white;
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5;
