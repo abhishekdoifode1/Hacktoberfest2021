@@ -2,5 +2,8 @@
 using namespace std;
 int main()
 {
-    cout<<"Hello "<<endl;
+    cout<<"ENTER YOUR YOUR HELLO TAG"<<endl;
+    string s;
+    cin>>s;
+    cout<<"HELLO"<<" "<<s<<endl;
 }
