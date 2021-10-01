@@ -68,5 +68,5 @@ int main()
 	cout<<"Symmetric";
 	else
 	cout<<"Not symmetric";
-	return 0;
+	return 0; 
 }
