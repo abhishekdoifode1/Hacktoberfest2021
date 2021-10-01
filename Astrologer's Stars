@@ -7,4 +7,6 @@ elif bool == 0:
     for i in range(i, 0, -1):
       print("*" * i)
 else:
-    print(" Please, Enter only 1 and 0 for ascending and descending pattern respectivey")
+    print(" Please, Enter only 1 and 0 for ascending and descending pattern respectively")
+
+
