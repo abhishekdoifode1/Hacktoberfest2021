@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 105deg, #f00909d5 10%, #5900ff6b 100%);
+	
+}
+
+h1 {
+	font-family: cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 30px;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    position: relative;
+    background-color: var(--bg-body);
+    color: var(--color-txt);
+    padding-top: calc(var(--nav-height) + 30px);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+
+/* box */
+.box {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--bg-content);
+    box-shadow: var(--shadow);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.box-hover {
+    transition: transform 0.2s ease-in-out;
+    background-color: white;
+}
+
+.box-hover:hover {
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 30px;
+}
+
+.box-header {
+    padding: 10px 0 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-txt);
+    position: relative;
+    text-transform: uppercase;
+}
+/* end box */
+
+/* count box */
+.count {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.count-icon {
+    --width: 70px;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    margin-right: 15px;
+}
+
+.count-info h4{
+    font-size: 1.5rem;
+}
+
+.count-info span {
+    margin-top: -14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.count-confirmed .count-info h4 {
+    color: purple;
+    text-align: center;
+}
+
+
+.count-recovered .count-info h4 {
+    color: green;
+}
+
+.count-death .count-info h4 {
+    color: #373c43;
+}
+
+.count-vaccinated-1 .count-info h4 {
+    color: orange;
+}
+
+
+.count-vaccinated-2 .count-info h4 {
+    color: blue;
+}
+/* end count box */
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba(235, 205, 205, 0.2);
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+.fl-table thead th {
+    color: white;
+    background: rgba(255, 0, 0, 0.8);
+    text-align: center;
+}
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #178bff;
+}
+
+.fl-table tr:nth-child(even) {
+    color: white;
+    background: #0e0d0dc9;
+}
+
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }    
+    .fl-table tr:nth-child(even) {
+        color: black;
+        background: #cacad80e;
+    }
+    .fl-table tr:nth-child(odd) {
+        color: black;
+        background: white;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-size: 12px;
+    }
+}
