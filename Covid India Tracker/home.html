@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <header>
+                <div class="overlay">
+                    <h1>Covid 19 India Tracker</h1>
+                    <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+                        Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.
+                        </p>
+                </div>
+            </header>
+            <!-- Tracking information -->
+            <div class="row">
+                <div class="col-12 col-md-12 col-sm-12">
+                    <div class="row">
+                        <!-- Counter -->
+                        <div class="col-2 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-confirmed">
+                                    <div class="count-info col-sm-12">
+                                        <h4 id="total_confirmed">123,456,789</h4>
+                                        <span>Confirmed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-recovered">
+                                    <div class="count-info col-sm-12">
+                                        <h4 id="total_recovered">123,456,789</h4>
+                                        <span>Total Recovered</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-2 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-death">
+                                    <div class="count-info col-sm-12">
+                                        <h4 id="total_deaths">123,456,789</h4>
+                                        <span>Total Deaths</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-2 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-vaccinated-1">
+                                    <div class="count-info col-sm-12">
+                                        <h4 id="total_vaccinated_1">123,456,789</h4>
+                                        <span>Single Vaccinated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-2 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-vaccinated-2">
+                                    <div class="count-info col-sm-12">
+                                        <h4 id="total_vaccinated_2">123,456,789</h4>
+                                        <span>Double Vaccinated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table class="table fl-table">
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Confirmed</th>
+                            <th>Recovered</th>
+                            <th>Deceased</th>
+                            <th>Single Vaccinated</th>
+                            <th>Double Vaccinated</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <canvas id="myChart" width="20" height="20"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+</html>
