@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kiwi Maru', serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #e6ffff;
+}
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float:left;
+    margin: 0px 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0.1,0.1,0.1,0.1);
+    transition: all 0.3s ease-in-out;
+}
+.wrapper .button:nth-child(1):hover{
+    width: 200px;
+    background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover{
+    width: 200px;
+    background: #00acee;
+}
+.wrapper .button:nth-child(3):hover{
+    width: 200px;
+    background: #bc2a8d;
+}
+.wrapper .button:nth-child(4):hover{
+    width: 200px;
+    background: #FF0000;
+}
+.wrapper .button:nth-child(5):hover{
+    width: 200px;
+    background: #4fce5d;
+}
+.wrapper .button:nth-child(6):hover{
+    width: 200px;
+    background: #6441a5;
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+.wrapper .button:nth-child(1) .icon{
+    color: #4267B2 ;
+}
+.wrapper .button:nth-child(2) .icon{
+    color: #00acee;
+}
+.wrapper .button:nth-child(3) .icon{
+    color: #bc2a8d;
+}
+.wrapper .button:nth-child(4) .icon{
+    color: #FF0000;
+}
+.wrapper .button:nth-child(5) .icon{
+    color: #4fce5d;
+}
+.wrapper .button:nth-child(6) .icon{
+    color: #6441a5;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+    background: #00acee;
+}
+.wrapper .button:nth-child(3):hover .icon{
+    background: #bc2a8d;
+}
+.wrapper .button:nth-child(4):hover .icon{
+    background: #FF0000;
+}
+.wrapper .button:nth-child(5):hover .icon{
+    background: #4fce5d ;
+}
+.wrapper .button:nth-child(6):hover .icon{
+    background: #6441a5;
+}
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+    color: #fff;
+}
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    color: #fff
+}
+.wrapper .button:nth-child(1):hover span{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover span{
+  background: #00acee;
+}
+.wrapper .button:nth-child(3):hover span{
+  background: #bc2a8d;
+}
+.wrapper .button:nth-child(4):hover span{
+  background: #FF0000;
+}
+.wrapper .button:nth-child(5):hover span{
+  background: #4fce5d;
+}
+.wrapper .button:nth-child(6):hover span{
+  background: #6441a5;
+}
