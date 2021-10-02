@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+# I Love Naruuto
 func main() {
 
 	var n int
