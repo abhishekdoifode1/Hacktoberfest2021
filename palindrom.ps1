@@ -17,7 +17,7 @@ Function Test–IsPalindrome {
         Write-Verbose "Length is $l"
         $mid = [math]::Truncate($l/2)
         Write-Verbose "Midpoint is $mid"
-    
+    # I love Naruto
         #could also use Substring()
         $start = –join ($text[0..($mid–1)]) #$text.Substring(0,($mid)) 
         $end = –join ($text[–1..–($mid)]) 
