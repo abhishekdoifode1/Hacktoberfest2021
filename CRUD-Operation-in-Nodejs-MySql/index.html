@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form</title>
+    <style>
+        input {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 100px;background-color: yellow;text-transform: capitalize;">
+    <form action="/post_method" method="post" enctype="multipart/form-data">
+        <center>
+            <h1>simple form</h1>
+            <h3>
+
+                Full name:
+                <input type="text" name="name" id="" placeholder="enetr your name"> <br>
+
+                Email-Id:
+                <input type="text" name="email" id="" placeholder="enter your email"> <br>
+
+                Password:
+                <input type="password" name="password" id="psdshow" placeholder="enter your password">
+                <img src="profile_photo/eye.png" alt="eye" id="clicker" onclick="show()"
+                    style="max-width: 25px;max-height: 25px;border-radius: 50%;margin-left: 10px;transform: translateY(10px);">
+                <br>
+
+                gender:
+                <input type="radio" name="gender" value="male" id="">male
+                <input type="radio" name="gender" id="" value="female">female <br>
+
+                Profile Photo:
+                <input type="file" name="photo" id="" placeholder="enetr your profile photo"> <br>
+
+                <input type="submit" value="Submit"> <br> <br>
+
+            </h3>
+            <h2>display <a href="/views/view_data.ejs">registated data</a></h2>
+        </center>
+    </form>
+    <script>
+        function show() {
+            let x = document.getElementById('psdshow');
+            if (x.type == 'password')
+                x.type = 'text';
+            else
+                x.type = 'password';
+        }
+    </script>
+</body>
+
+</html>
