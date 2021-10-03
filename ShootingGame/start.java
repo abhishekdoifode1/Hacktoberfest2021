@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class simpleDotcom {
+public class start {
     public static void main(String[] args) throws Exception {
         BufferedReader size = new BufferedReader(new InputStreamReader(System.in));
         getInput n = new getInput();
