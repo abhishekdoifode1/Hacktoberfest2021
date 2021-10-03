@@ -1,0 +1,38 @@
+// header files
+
+#include<stdc++.h>
+using namespace std;
+
+
+// function to check whether a number is even or odd
+
+void checkEvenOrOdd(int n){
+
+if(n & 1 == 1){
+
+cout<<"odd"<<endl;
+
+}
+else {
+
+cout<<"even"<<endl;
+
+}
+
+}
+
+
+//Driver code
+
+int main(){
+
+int n;
+cin>>n;    // taking input
+
+checkEvenOrOdd(n);  //function call
+
+return 0;
+
+}
+
+
