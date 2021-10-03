@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit form</title>
+    <style>
+        input {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body style="
+      margin-top: 100px;
+      background-color: rgb(182, 228, 108);
+      text-transform: capitalize;
+    ">
+    <form action="/edit_form" method="post" enctype="multipart/form-data">
+        <center>
+            <h1>edit form</h1>
+            <h3>
+                <input type="hidden" value="<%= user_data.id %>" name="userid" id="" />
+
+                Full name:
+                <input type="text" value="<%=user_data.name%>" name="name" id="" placeholder="enetr your name" />
+                <br />
+
+                Email-Id:
+                <input type="text" value="<%=user_data.email%>" name="email" id="" placeholder="enter your email" />
+                <br />
+
+                Password:
+                <input type="password" name="password" value="" id="psdshow" />
+                <img src="/eye.png" alt="eye" id="clicker" onclick="show()"
+                    style="max-width: 25px;max-height: 25px;border-radius: 50%;margin-left: 10px;transform: translateY(10px);">
+                <br />
+
+                gender: <input type="radio" name="gender" <% if(user_data.gender=='male' ) { %> checked <% } %>
+                    value="male" id="">male
+
+                    <input type="radio" name="gender" <% if(user_data.gender=='female' ) { %>
+                    checked <% } %> id=""
+                        value="female">female<br />
+
+                        Profile Photo:
+                        <input type="file" name="photo_pic" /><br />
+
+                        <img style="max-width: 150px;max-height: 150px;position: absolute;top: 300px;right: 350px;"
+                            src="<%=user_data.picpath%>" alt="have not upload">
+
+                        <input style="padding: 5px 20px; font-size: 26px; border-radius: 25px" type="submit"
+                            value="Submit" />
+            </h3>
+        </center>
+    </form>
+
+    <script>
+        function show() {
+            let x = document.getElementById('psdshow');
+            if (x.type == 'password')
+                x.type = 'text';
+            else
+                x.type = 'password';
+        }
+    </script>
+
+</body>
+
+</html>
