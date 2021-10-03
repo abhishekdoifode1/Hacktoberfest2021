@@ -1,0 +1,40 @@
+html,
+body {
+  font-family: "open sans", sans-serif;
+  background-color: #61da81;
+}
+
+.big{
+  font-size: 32px;
+  color: #6255a5;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px auto;
+  background-color: yellow;
+  padding: 10px 30px;
+  border: 2px black solid;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.form-control{
+  border-radius: 10px;
+  border: black 1px solid;
+}
+
+
+
+.btnn{
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: #6255a5;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 300ms linear;
+}
+
+.btnn:hover{
+  background-color: white;
+  color: #6255a5;
+}

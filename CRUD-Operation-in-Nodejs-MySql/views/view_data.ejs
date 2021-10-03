@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data display</title>
+    <style>
+        input {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 70px;background-color:  rgb(182, 228, 108)">
+    <center>
+        <h1>Data of users</h1>
+        <h2>can't find yourselfe? <a href="../index.html">register here!</a> </h2>
+        <table border="1"
+            style="background-color:yellow;color: black;border-radius: 25px;text-align: center;padding: 25px;margin-bottom: 50px;">
+            <thead>
+                <th style="min-width: 50px;">sr no</th>
+                <th style="min-width: 150px;">username</th>
+                <th style="min-width: 100px;">Gender</th>
+                <th style="min-width: 250px;">emaild</th>
+                <th style="min-width: 250px;">profile</th>
+                <th style="min-width: 150px;">Action</th>
+            </thead>
+            <tbody>
+                <% count=0; users.forEach(function(x) { count++; %>
+                    <tr>
+                        <td>
+                            <%= count %>
+                        </td>
+                        <td>
+                            <%= x.name %>
+                        </td>
+                        <td>
+                            <%= x.gender %>
+                        </td>
+                        <td>
+                            <%= x.email %>
+                        </td>
+                        <td>
+                            <img style="max-width: 100px;max-height: 100px;padding: 10px;" src="<%= x.picpath%>"
+                                alt="no_photo_provided">
+                        </td>
+                        <td><a href="edit/<%= x.id %>"><button style="margin-right: 20px;">Edit</button></a>
+                            <a onclick="return confirm('Are you sure ?');" href="del/<%= x.id %>"><button
+                                    id="confirm_box">Delete</button></a>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>
