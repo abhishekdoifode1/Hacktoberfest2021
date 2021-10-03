@@ -1,0 +1,222 @@
+html, body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: -webkit-linear-gradient(-180deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-180deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-180deg, #c850c0, #4158d0);
+  background: linear-gradient(-180deg, #c850c0, #4158d0);
+  max-width: 100%;
+  height: 100vh;
+  /*To disabled the text selection*/
+  -youbkit-touch-callout: none;
+  -youbkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /*To smooth scroll*/
+  scroll-behavior: smooth;
+}
+section {
+  padding: 150px 0;
+}
+
+.warapper{
+	margin-top: 28%;
+	margin-left: 5%;
+	margin-bottom: 15%;
+	padding: 20px;
+	width: 90%;
+	height: auto;
+	border-radius: 30px;
+	margin-right: 50px;
+	padding-left: 20px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #4158d0;
+	box-shadow: 1px 1px 18px #4158d0;
+}
+
+input[type=number],  select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	box-sizing: border-box;
+}
+
+input[type=number]:focus{
+	background-color:#e6f8fc;
+	font-family:"calibri";
+	border: 2px solid #57b846;
+}
+
+.calculate{
+  width: 100%;
+  font-size:20px;
+  background-color: #57b846;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+
+.lablFirst{
+	margin-bottom: -12px;
+	margin-top: -15px;
+	color: white;
+}
+
+.labl{
+	margin-bottom: -12px;
+	margin-top: 15px;
+	color: white;
+
+}
+
+.result{
+	width: 100%;
+	height: 70px;
+	background-color: #c850c0;
+	border-radius: 45px;
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	padding: 4%;
+
+}
+
+.error{
+	font-size: 14px;
+	font-family: calibri;
+	color: white;
+	background-color: #c850c0;
+	border-radius: 5px;
+}
+
+.heading{
+	color: white;
+	text-align: center;
+	justify-content: center;
+}
+
+.seeStatPara{
+	font-size: 14px;
+	font-family: calibri;
+	color: white;
+	background-color: #9e1e62;
+	border-radius: 5px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	width: 90%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 5%;
+}
+
+.secondLabel{
+	margin-top: -10px;
+}
+
+input:focus{
+  outline: none !important;
+  box-shadow: 0 0 10px #57b846;
+}
+
+select:focus{
+  outline: none !important;
+}
+
+button:focus{
+  outline: none !important;
+}
+
+.reset{
+  width: 70%;
+  font-size:20px;
+  background-color: #57b846;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 15%;
+  border: none;
+  border-radius: 25px;
+  margin-top: -10px;
+}
+
+.applink a{
+  text-decoration: none;
+  display: block;
+}
+
+.myNav{
+  text-align: center; 
+  margin-top: 20px; 
+  height: 100vh;
+}
+
+.myNav li{
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+/*.myNavColor{
+	background-color: #3d2c36;
+	color: white;
+}
+
+.nav-link{
+	color: white;
+}
+
+.nav-link:active{
+	color: white;
+}
+
+.nav-link:hover{
+	color: white;
+}
+
+.myTog{
+	color: white;
+	border: 1px white;
+}*/
+
+.para{
+	font-size: 15px;
+	text-align: justify;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #fff;
+	line-height: 30px;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	-webkit-animation-delay: 0.25s;
+}
+
+/*To change the nav bar color & size*/
+.navbar:not(.top-nav-collapse) {
+    background: #420d41 !important;
+}
+.view,body,html{height:100%}
+
+.navbar{
+	background-color:rgba(0,0,0,.2);
+}
+
+.page-footer,.top-nav-collapse{
+	background-color:#420d41;
+}
+
+#naviLK{
+	margin-top:2px;
+	margin-bottom:2px;	
+}
