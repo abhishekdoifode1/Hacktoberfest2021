@@ -1,0 +1,42 @@
+
+@font-face {
+	font-family: 'Diffusion Web';
+	font-weight: 400;
+	font-style: normal;
+	src: url('woff2/diffusion-regular.woff2') format('woff2'), url('woff/diffusion-regular.woff') format('woff'), url('ttf/diffusion-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Diffusion Web';
+	font-weight: 400;
+	font-style: italic;
+	src: url('woff2/diffusion-italic.woff2') format('woff2'), url('woff/diffusion-italic.woff') format('woff'), url('ttf/diffusion-italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Diffusion Web';
+	font-weight: 700;
+	font-style: normal;
+	src: url('woff2/diffusion-bold.woff2') format('woff2'), url('woff/diffusion-bold.woff') format('woff'), url('ttf/diffusion-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Diffusion Web';
+	font-weight: 700;
+	font-style: italic;
+	src: url('woff2/diffusion-bolditalic.woff2') format('woff2'), url('woff/diffusion-bolditalic.woff') format('woff'), url('ttf/diffusion-bolditalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Diffusion Web';
+	font-weight: 300;
+	font-style: normal;
+	src: url('woff2/diffusion-light.woff2') format('woff2'), url('woff/diffusion-light.woff') format('woff'), url('ttf/diffusion-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Diffusion Web';
+	font-weight: 300;
+	font-style: italic;
+	src: url('woff2/diffusion-lightitalic.woff2') format('woff2'), url('woff/diffusion-lightitalic.woff') format('woff'), url('ttf/diffusion-lightitalic.ttf') format('truetype');
+}

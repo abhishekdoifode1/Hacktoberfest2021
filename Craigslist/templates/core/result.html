@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Result:</h2>
+  <br />
+</div>
+<br />
+<br />
+<div class="row">
+  {% for dat in content_data %}
+  <div class="col s12 m4 l4">
+    <div class="card hoverable">
+      <div class="card-image">
+        <img src="{{dat.image}}" />
+        <span class="card-title">{{dat.title}}</span>
+      </div>
+      <div class="card-content">
+        <p>{{dat.body | escape | safe}}</p>
+      </div>
+      <div class="card-action">
+        <a href="{{dat.url}}">This is a link</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

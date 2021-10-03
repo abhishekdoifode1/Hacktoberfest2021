@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300&display=swap');
+html, body {
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: #34124E;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(transparent , #34124E);
+}
+img {
+    z-index: 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+#text {
+    font-family: 'Lobster', cursive;
+    position: relative;
+    font-size: 8em;
+    z-index:  1 ;
+    color: #900C9E;
+    text-shadow: 4px 4px 7px #34124E;
+}
+@media (max-width : 669px){
+    #text {
+        font-size: 4.5em;
+     
+    }
+}
+.main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.main h1 {
+    font-family: 'Lobster', cursive;
+    font-size:4rem;
+    color: #900C9E;
+    text-shadow: 4px 4px 7px #34124E;
+}
+.content {
+    overflow: hidden;
+    height: 100%;
+    width: 80%;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-height: 200px;
+    padding: 1rem;
+}
+a{
+    font-size: 120%;
+    color: #900C9E;
+    text-shadow: 4px 4px 7px #34124E;
+    text-decoration:none ;
+}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<!-- title area -->
+{% block title %} Search {% endblock title %}
+<!-- content area -->
+{% block content %}
+<!-- background  -->
+{% include 'core/slogan.html' %}
+<div class="container">
+  <div class="center">
+    <h2>Search...</h2>
+    <form action="{% url 'core:new-search' %}" method="post">
+      <!-- vuln -->
+      {% csrf_token %}
+      <!-- check -->
+      <div class="row">
+        <div class="input-field col s12 m12 l12">
+          {% if forms %}
+          <!-- django form -->
+          {{ forms }}
+          <!-- end checked -->
+          {% endif %}
+        </div>
+      </div>
+      <div class="center">
+        <button class="waves-effect waves-light btn btn-large purple darken-2">
+          <i class="material-icons left">search</i>SEARCH
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<!-- check -->
+{% if content_data %}
+<!-- call for result template -->
+{% include 'core/result.html' with content_data=content_data %}
+<!-- checked -->
+{% endif %}
+<!-- end -->
+{% endblock content %}

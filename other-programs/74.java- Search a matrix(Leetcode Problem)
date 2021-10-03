@@ -1,0 +1,31 @@
+/*
+Explanation:
+
+z
+This matrix has the following properties:
+
+Integers in each row are sorted from left to right.
+The first integer of each row is greater than the last integer of the previous row.
+*/
+
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if(matrix == null || matrix.length == 0) {
+            return false;
+        }
+        int m = matrix.length, n = matrix[0].length;
+        int x = 0, y = n-1;
+        while(y>=0 && y<n && x >= 0 && x<m) {
+            int curr = matrix[x][y];
+            if(target == curr) {
+                return true;
+            } else if(target > curr) {
+                x++;
+            } else {
+                y--;
+            }
+            
+        }
+        return false;
+    }
+}

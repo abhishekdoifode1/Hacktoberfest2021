@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+<!-- title area -->
+{% block title %} Home {% endblock title %}
+<!-- content area -->
+{% block content %}
+<!-- background -->
+{% include 'core/slogan.html' %}
+<!-- search button -->
+<div class="center">
+  <a
+    class="waves-effect waves-light btn btn-large purple darken-2"
+    href="{% url 'core:new-search' %}"
+    ><i class="material-icons left">arrow_drop_down</i>CLICK</a
+  >
+</div>
+{% endblock content %}

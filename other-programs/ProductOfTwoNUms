@@ -1,0 +1,8 @@
+
+const ProductOfTwoNUms = (a,b) =>{
+
+
+return a-b
+}
+
+//created by evergreen2001
