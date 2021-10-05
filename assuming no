@@ -1,0 +1,42 @@
+package com.company;
+import java.util.*;
+public class Gussing
+{
+    public static void main(String [] args)
+    {
+       Scanner s=new Scanner(System.in);
+       int a=(int) (Math.random()*100);
+       System.out.println("Guess the no.????");
+       System.out.println("you have 10 chance ..... ");
+        int z,i;
+
+       for (i=9;i>=0;i--)
+       {
+           System.out.print("enter your guess=");
+          z=s.nextInt();
+
+          if (a==z)
+          {
+              System.out.println("You entered correct value "+z);
+              break;
+          }
+          else if(a>z)
+          {
+              System.out.println("You entered value is smaller than actual value");
+              System.out.println(i+" chance left");
+          }
+          else if(a<z)
+          {
+              System.out.println("You entered value is bigger than actual value");
+              System.out.println(i+" chance left");
+          }
+
+       }
+       if (i==-1)
+       {
+           System.out.println("your out of chance. actual value is "+a);
+       }
+
+
+    }
+}
