@@ -31,6 +31,8 @@
 def fibonacci(n):
 
     # Write your code here.
+    if(n<0):
+        print('Invalid input')
     if(n < 1):
         return 0
     if(n == 1):
