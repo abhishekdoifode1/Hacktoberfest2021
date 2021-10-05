@@ -1,0 +1,16 @@
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+        int c=0;
+        for(char i='a';i<='z';i++){
+            if(sentence.indexOf(i)!=-1){  //When index!=-1 it means that the element is present so increment the counter.
+                c=c+1;
+            }
+        }
+        if(c==26)//It means that all the english alphabets are present
+            return true;
+        else
+            return false;
+    }
+}
+
+//A string is said to be a panagram string if all the english alphabets come atleast once in the string.So check so we iterate over the string and check if the alphabet is present or not.
