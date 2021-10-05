@@ -1,0 +1,79 @@
+body
+{
+    font-family: Arial Rounded MT;
+    background: linear-gradient(to right,red,purple);
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0px;
+    margin: 10px auto;
+    background-color: #272727;
+    border-radius: 10%;
+}
+
+table tr td
+{
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255,.05);
+    font-size: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+table tr td:hover
+{
+    background: #2c3531;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.but
+{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #000;
+    color:red;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translate(-50%,70%);
+    left: 50.1%;
+    top: 75%;
+}
+.text
+{
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-weight: bold;
+    color:rgba(240, 228, 228, 0.705);
+    font-size: 60px;
+
+}
+.shift
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(1%,100%);
+
+}
+.text1
+{
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-45%,200%);
+    position: absolute;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.but:hover
+{
+    color: orange;
+}
