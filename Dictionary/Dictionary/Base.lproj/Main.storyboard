@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="PW3-Ry-I7N" userLabel="Data Entry Stack View">
+                                <rect key="frame" x="20" y="91.5" width="335" height="182"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-hg-D0a">
+                                        <rect key="frame" x="20" y="0.0" width="295" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fcG-fa-5aV"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsx-5b-7y6">
+                                        <rect key="frame" x="20" y="71" width="295" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="20R-Oh-0C5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxV-Ru-wtn">
+                                        <rect key="frame" x="60" y="142" width="215" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="siI-a4-cef"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oxV-Ru-wtn" firstAttribute="leading" secondItem="PW3-Ry-I7N" secondAttribute="leading" constant="60" id="2WY-5p-nPm"/>
+                                    <constraint firstItem="7fh-hg-D0a" firstAttribute="leading" secondItem="PW3-Ry-I7N" secondAttribute="leading" constant="20" id="8S3-U4-giw"/>
+                                    <constraint firstAttribute="trailing" secondItem="7fh-hg-D0a" secondAttribute="trailing" constant="20" id="Nby-6y-gMw"/>
+                                    <constraint firstAttribute="trailing" secondItem="bsx-5b-7y6" secondAttribute="trailing" constant="20" id="SMQ-5C-1CJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oxV-Ru-wtn" secondAttribute="trailing" constant="60" id="dtT-ue-x7I"/>
+                                    <constraint firstItem="bsx-5b-7y6" firstAttribute="leading" secondItem="PW3-Ry-I7N" secondAttribute="leading" constant="20" id="h5g-aP-qPe"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This App is for Dictionary Below this You can add Key and Values." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc6-nT-joK">
+                                <rect key="frame" x="15" y="20" width="344" height="51.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can Search Value by using Key." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg7-rG-kjn">
+                                <rect key="frame" x="10" y="306" width="355" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Id0-vb-xiT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lbF-Fo-KTg" userLabel="Result Stack View">
+                                <rect key="frame" x="20" y="391" width="335" height="221"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-L1-oYC">
+                                        <rect key="frame" x="20" y="0.0" width="295" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="woj-nv-d9I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtW-ie-frW">
+                                        <rect key="frame" x="90" y="80" width="155" height="51"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="uPT-Ao-Bp0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEX-tw-K8z"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-m4-Kl9">
+                                        <rect key="frame" x="20" y="171" width="295" height="50"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hRq-pD-a5g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YtW-ie-frW" secondAttribute="trailing" constant="90" id="72O-c8-0AJ"/>
+                                    <constraint firstItem="SpX-L1-oYC" firstAttribute="leading" secondItem="lbF-Fo-KTg" secondAttribute="leading" constant="20" id="QJX-Cq-v6X"/>
+                                    <constraint firstAttribute="trailing" secondItem="8MP-m4-Kl9" secondAttribute="trailing" constant="20" id="UVs-Q9-rB5"/>
+                                    <constraint firstAttribute="trailing" secondItem="SpX-L1-oYC" secondAttribute="trailing" constant="20" id="hMQ-Nq-Ca7"/>
+                                    <constraint firstItem="8MP-m4-Kl9" firstAttribute="leading" secondItem="lbF-Fo-KTg" secondAttribute="leading" constant="20" id="jWJ-Tf-Z2m"/>
+                                    <constraint firstItem="YtW-ie-frW" firstAttribute="leading" secondItem="lbF-Fo-KTg" secondAttribute="leading" constant="90" id="sC6-dX-00J"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lbF-Fo-KTg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1c0-T7-yfj"/>
+                            <constraint firstItem="lbF-Fo-KTg" firstAttribute="top" secondItem="cg7-rG-kjn" secondAttribute="bottom" constant="30" id="2bf-7I-pR5"/>
+                            <constraint firstItem="cg7-rG-kjn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3PT-9J-C2Z"/>
+                            <constraint firstItem="PW3-Ry-I7N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BTi-ii-TmH"/>
+                            <constraint firstItem="cg7-rG-kjn" firstAttribute="top" secondItem="PW3-Ry-I7N" secondAttribute="bottom" constant="32.5" id="F1r-h7-tzi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PW3-Ry-I7N" secondAttribute="trailing" constant="20" id="VIT-Vm-Oio"/>
+                            <constraint firstItem="cg7-rG-kjn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="axE-ni-LG6"/>
+                            <constraint firstItem="cg7-rG-kjn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="giY-9q-lGX"/>
+                            <constraint firstItem="PW3-Ry-I7N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j1h-0A-pNR"/>
+                            <constraint firstItem="lbF-Fo-KTg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKb-qc-ioP"/>
+                            <constraint firstItem="bc6-nT-joK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tsB-HL-YzB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bc6-nT-joK" secondAttribute="trailing" constant="16" id="uWl-bf-JCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbF-Fo-KTg" secondAttribute="trailing" constant="20" id="xy2-tj-fPr"/>
+                            <constraint firstItem="PW3-Ry-I7N" firstAttribute="top" secondItem="bc6-nT-joK" secondAttribute="bottom" constant="20" id="yo9-8z-iSh"/>
+                            <constraint firstItem="bc6-nT-joK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zhA-Vc-fYG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="8MP-m4-Kl9" id="gIk-pC-kxz"/>
+                        <outlet property="keySearchTextField" destination="SpX-L1-oYC" id="TvL-YZ-cOW"/>
+                        <outlet property="keyTextField" destination="7fh-hg-D0a" id="KLx-Y7-lWS"/>
+                        <outlet property="valueTextField" destination="bsx-5b-7y6" id="Gsz-3r-iCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>
