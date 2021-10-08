@@ -1,0 +1,7 @@
+install.packages("palmerpenguins")
+library(palmerpenguins)
+instal.packages("tidyverse")
+library(tidyverse)
+instal.packages("ggplot2")
+library(ggplot2)
+ggplot(data = penguins) +geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, alpha = species, color = species, shape = species, size = species))
