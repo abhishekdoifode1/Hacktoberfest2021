@@ -1,0 +1,37 @@
+//This is a LEETCODE medium level problem asked in many Interview rounds. 
+//You can refer to the problem from here:-   https://leetcode.com/problems/bag-of-tokens
+
+
+class Solution {
+    public int bagOfTokensScore(int[] tokens, int p) 
+    {
+        Arrays.sort(tokens);// sort the array to get the lowest token first
+        int point=0; // current count of points we have
+        int i=0; // starting index
+        int j=tokens.length-1; // ending index
+        int max=0; // total number of points
+        
+        while(i<=j)
+        {
+            if(p>=tokens[i]) // if we have the power greater than the token present in the array
+            {
+                point++; // increment the point
+                p-=tokens[i++]; // decrement the power by the magnitutde of token
+                max=Math.max(max,point); 
+            }
+            else if(point>0)
+            {
+                point--; // if we can buy some power 
+                p=p+tokens[j--]; // we buy the ending bag of token so we have the most amount of power to utilize
+            }
+            else
+            {
+                return max;
+            }
+            
+        }
+        
+        return max;
+        
+    }
+}
