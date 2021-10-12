@@ -1,0 +1,36 @@
+.container{
+    background-color: yellow;
+    width: 25%;
+    min-width: 350px;
+    padding: 20px;
+}
+.result{
+    align-items: center;
+    position: relative;
+    height: 50px;
+    background-color: blue;
+    padding: 12px 10px;
+}
+#result{
+    word-wrap: break-word;
+    max-width: calc(100%-40px);
+}
+.result .btn{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: salmon;
+    top: 5px;
+    right: 5px;
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.abc{
+    text-align: center;
+}
+#generate{
+    background: chartreuse;
+}
