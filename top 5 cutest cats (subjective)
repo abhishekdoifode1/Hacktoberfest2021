@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table, th, td {
+  border: 2px solid powderblue;
+
+}
+</style>
+</head>
+<body>
+
+<body style="background-color:ghostwhite;">
+
+<p style="background-color:lemonchiffon; text-align:center; font-family:impact; font-size:250%; font-size:50px">&#128008;Top 5 Cutest Cats <span style='font-size:50px;'>&#128008;</span>
+<p style="text-align:center; font-family:arial; font-size:100%;">Evida Wei - Period 4 CSD</p>
+
+<table style="width:100%; font-family:courier">
+
+  <tr>
+    <th><p style= "font-family:arial">B R E E D</th>
+    <th><p style= "font-family:arial">I M A G E</th> 
+    <th><p style= "font-family:arial">P E R S O N A L I T Y</th>
+  </tr>
+  <tr>
+    <td><p style=color:deepskyblue;> <b>Ragdoll </b> </td>
+    <td> <img src="https://www.catster.com/wp-content/uploads/2018/01/Ragdoll-cat-on-blue-backdrop-.jpg" alt="Trulli" width="200" height="130"> </td>
+    <td><p style=color:deepskyblue; > <b>Ragdoll cats are easy to train and are friendly towards everyone. They learn new tricks quite quickly. They will often greet the human and is also friendly towards dogs.</b></td>
+  </tr>
+  <tr>
+    <td><p style=color:purple;> <b>Scottish Fold </b></td>
+    <td> <img src="https://www.showcatsonline.com/tc-sco/tcimages-sco/foldex_MG_4516-web-mag.jpg" alt="Trulli" width="150" height="170"> </td>
+    <td><p style=color:purple;> <b>Scottish fold cats adapt to different environments quickly and love to be around people. They are calm and quiet cats who are also curious and playful.</b></td>
+  </tr>
+  <tr>
+    <td><p style=color:burlywood;> <b>Birman</b></td>
+    <td> <img src="http://fenozi.com/wp-content/uploads/2017/04/cute-cats-4.jpg" alt="Trulli" width="200" height="130"></td>
+    <td><p style=color:burlywood;> <b>Birman cats are perfect for families. Their nature is gentle and friendly but not attention-seeking. They like to explore their homes, so you can probably find them everywhere.</b></td>
+  </tr>
+  <tr>
+  <td><p style=color:dimgray;> <b>British Shorthair</b></td>
+    <td> <img src="https://thefelinefancier.com/wp-content/uploads/2019/07/british-shorthair-breeder-near-me-768x510.jpg" alt="Trulli" width="200" height="130"> </td>
+    <td><p style=color:dimgray;> <b>British Shorthair cats are reserved cats, but with enough love and care, will adapt to the family. Once older, they become lazy, and prefer to lie on couches. They are gentle with people and don't like to be carried.</b></td>
+  </tr>
+  <tr>
+  <td><p style=color:saddlebrown;> <b>Munchkin</b></td>
+    <td> <img src="https://cf.ltkcdn.net/cats/images/orig/243191-1600x1065-black-and-white-munchkin-cat.jpg" alt="Trulli" width="210" height="130"> </td>
+    <td><p style=color:saddlebrown;> <b>Munchkin cats are like corgis in the cat world. They are playful and energetic cats. They love to interact with people and other pets like dogs.</b></td>
+</table>
+
+</body>
+</html>
