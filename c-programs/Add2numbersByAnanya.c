@@ -1,7 +1,14 @@
-num1 = 15
-num2 = 12
-
-sum = num1 + num2 
-
-
-print("The Sum of {0} and {1} is {2}" .format(num1, num2, sum))
+#include <stdio.h>
+int main()
+{
+  int n1, n2;
+  printf ("Enter first number: ");
+  scanf ("%d", &n1);
+  printf ("Enter second number: ");
+  scanf ("%d", &n2);
+  
+  int sum = n1 + n2;
+  
+  printf("The Sum of %d and %d is %d\n", n1, n2, sum);
+  return 0;
+}
