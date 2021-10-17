@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cavas</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            margin: 0px;
+        }
+        canvas {
+
+        }
+    </style>
+</head>
+<body>
+        <canvas  width="400px" height="400px"id="canvas">
+             
+        </canvas>
+<script>
+    var canvas = document.getElementById("canvas");
+var c = canvas.getContext("2d");
+ window.onload = function () {
+    canvas.setAttribute("width",window.innerWidth+"px");
+    canvas.setAttribute("height",window.innerHeight+"px");
+    reDraw();
+};
+
+window.onresize =  function () {
+    c.canvas.width = window.innerWidth;
+    c.canvas.height = window.innerHeight;
+    reDraw();
+};
+
+
+function reDraw() {
+
+var arr = [];
+function Circle(x,y,xv,yv,r,color) {
+    this.x = x;
+    this.y = y;
+    this.xv = xv;
+    this.yv = yv;
+    this.r = r;
+    this.color = color;
+
+    this.draw = function() {
+        c.beginPath();
+        c.arc(this.x,this.y,this.r,0,Math.PI * 2,false);
+        c.stroke();
+        c.fillStyle = this.color;
+        c.fill();
+    }
+
+    this.update = function() {
+        if(this.x + this.r > canvas.width || this.x - this.r < 0 ) {
+            this.xv = (-this.xv);
+        }
+        if(this.y + this.r > canvas.height || this.y - this.r < 0 ) {
+            this.yv = (-this.yv);
+        }
+        this.x+=this.xv;
+        this.y+=this.yv;
+        this.draw();
+    }
+}
+
+var color = ["#8E56BF","#5F3980","#BE73FF","#2F1D40","#AB67E6","#7BFFED"];
+    for (var i = 0 ; i < 400 ; i++) {
+        var randomR = Math.floor(Math.random() * 10);
+        var randomX = Math.random() * canvas.width;
+        var randomY = Math.random() * canvas.height;
+        var randomXV = Math.floor(Math.random() * 4+1);
+        var randomYV = Math.floor(Math.random() * 4+1);
+            if(randomX < randomR*2 && randomX > canvas.width - randomR *2) {
+                    var randomX = ( Math.random() * canvas.width);
+            }
+            if(randomY < randomR*2 && randomY > canvas.height - randomR *2) {
+                    var randomY = ( Math.random() * canvas.height);
+            }
+        arr.push(new Circle(randomX,randomY,randomXV,randomYV,randomR,color[Math.floor(Math.random() * color.length)]))
+    }
+    
+    
+    function animate() {
+        c.clearRect(0,0,canvas.width,canvas.height)
+            for (var i = 0; i < arr.length; i++) {
+                arr[i].update();
+            }
+        requestAnimationFrame(animate);
+    }
+    animate()
+} 
+    
+</script>
+<marquee style: top="20px";>fly <img src="https://cms-assets.tutsplus.com/uploads/users/1112/posts/25209/final_image/animate-bird-slide-25.gif" width="200" height="200" alt="Tutorials " border="0"></marquee>
+</body>
+</html>
