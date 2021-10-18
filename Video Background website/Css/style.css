@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(45%)
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666060;
+    mix-blend-mode: overlay;
+}
+.navbar {
+    position: fixed;
+    top: 0px;
+    color: white;
+    width: 100%;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    cursor: pointer;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul {
+    text-align: right;
+}
+.navbar .active {
+    color: white;
+}
+.navbar ul .left {
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    float: left;
+    font-weight: bolder;
+}
+.follow i, .content button {
+    cursor: pointer;
+}
+.navbar i {
+    margin-right: 0.3em;
+    display: none;
+}
+.follow i{
+    color:white
+}
+.navbar ul li:hover {
+    background-color: .555;
+    color: white;
+}
+@media screen and (max-width: 750px) {
+    .navbar ul li {
+        display: none;
+    }
+    .navbar i {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 750px) {
+    .navbar.responsive {
+        position: absolute;
+        top: 0px;
+        z-index: 200;
+    }
+    .navbar.responsive i {
+        float: right;
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .navbar.responsive ul .left {
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+        float: none;
+    }
+}
+.content {
+    width: 100%;
+    position: fixed;
+    top: 5em;
+    left: 0em;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+}
+.content h5 {
+    font-family: monospace;
+    padding-right: 0.4em;
+}
+.follow {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.follow i {
+    padding: 3px;
+}
+.follow h4 {
+    margin-right: 0.6em;
+    display: inline-block;
+}
+button {
+    padding: 0.6em;
+    border-radius: 15px 15px;
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(12, 75, 248);
+    
+}
+@media (min-width:0px) and (max-width:750px) {
+    /*h*/
+    .content {
+        top: 4em;
+        left: 0em;
+    }
+    .content h1 {
+        font-size: 1.3em;
+    }
+    .content h5 {
+        font-size: 0.7em;
+    }
+    .follow h4 {
+        font-size: 1.2em;
+        margin-right: 0.6em;
+    }
+    .navbar {
+        background-color: black;
+    }
+    button {
+        font-size: 0.6em;
+    }
+    .content h5 {
+        padding-right: 0.4em;
+    }
+}
+@media (min-width:241px) and (max-width:414px) {
+    /*h*/
+    .content {
+        top: 4.5em;
+        
+    }
+}
+@media (min-width:414px) and (max-width:600px) {
+    /*h*/
+    button {
+        font-size: 0.5em;
+    }
+    .content h5 {
+        font-size: 0.8em;
+    }
+    .content {
+        text-align: center;
+        top: 5em;
+      
+    }
+    .buttonDiv {
+        text-align: center;
+    }
+}
+@media (min-width:481px) and (max-width:720px) {
+    /*h*/
+    .content {
+        text-align: center;
+        top: 6em;
+        
+    }
+    .content h1 {
+        font-size: 1.5em;
+    }
+    button {
+        font-size: 0.55em;
+    }
+}
+@media (min-width:601px) and (max-width:720px) {
+    /*h*/
+    .content h1 {
+        font-size: 1.6em;
+    }
+    .content h5 {
+        font-size: 0.9em;
+    }
+}
+@media (min-width:721px) and (max-width:1440px) {
+    /*h*/
+    .content {
+        text-align: center;
+        top: 5em;
+        left: 0em;
+    }
+    .follow h4 {
+        font-size: 1.7em
+    }
+    .content h1 {
+        font-size: 2em;
+    }
+    .content h5 {
+        font-size: 1em;
+    }
+    button {
+        font-size: 0.6em;
+    }
+    .buttonDiv {
+        text-align: center;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px) {
+    /*h*/
+    .content {
+        text-align: center;
+        top: 4.5em;
+        left: 0em;
+    }
+    .content h1 {
+        font-size: 2.2em;
+    }
+    .content h5 {
+        font-size: 1.3em;
+    }
+}
+@media (min-width:1441px) {
+    /*h*/
+    .content {
+        text-align: center;
+        top: 4.5em;
+        left: 0em;
+    }
+    .content h1 {
+        font-size: 2.2em;
+    }
+    .content h5 {
+        font-size: 1.3em;
+    }
+    button {
+        font-size: 0.6em;
+    }
+    .buttonDiv {
+        text-align: center;
+    }
+    .follow h4 {
+        font-size: 1.9em
+    }
+}
