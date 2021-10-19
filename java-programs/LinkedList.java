@@ -1,111 +1,133 @@
-public class MyLinkedlist<E> {
-//Creating Node class that will consist a data part and initially the next pointer is pointing to null.This means there is a single node.
-  static class Node<E> {
-		E data;
-		Node<E> next;
-		public Node(E data)
-		{
-			this.data=data;
-			next = null;
-		}
-	}
-  
-  //Creating an instance of class Node
-	Node<E> head;
-  
-  //Add function will be used to add nodes to the linkedlist.
-	public void add(E data)
-	{
-		Node<E> toAdd = new Node<E>(data);
-		Node<E> temp=head;
-		if(isEmpty())
-		{
-			head=toAdd;
-			return;
-		}	
-		while(temp.next!=null)
-			{temp=temp.next;
-		}
-		temp.next=toAdd;
-	}
-  
-//isEmpty() will check whether the linkedlist is empty or not.It will return boolean value.
-	public boolean isEmpty()
-	{
-		return head==null;
-	}
-	public void print()
-	{
-		Node<E> temp=head;
-		
-		while(temp!=null)
-		{
-		 System.out.print(temp.data+" ");
-		 temp=temp.next;
-		}
-		System.out.println();
-}
-  //removelast() will return the last node of the linkedlist
-	public E removelast() throws Exception
-	{
-		Node<E> temp=head;
-		if(isEmpty())
-		{
-			throw new Exception("cannot remove last element from empty list");
-		}
-		if(temp.next==null)
-		{
-		Node<E> toremove =temp;
-		head=null;
-		return  toremove.data;
-		}
-		while(temp.next.next!=null)
-		{
-		 temp=temp.next;
-		}
-		Node<E> toremove =temp.next;
-		temp.next=null;
-		return  toremove.data;
-}
-  //getlast() will return the data part of the last node
-	public E getlast() throws Exception
-	{
-		Node<E> temp=head;
-		if(isEmpty())
-		{
-			throw new Exception("cannot remove last element from empty list");
-		}
-		while(temp.next!=null)
-		{
-			temp=temp.next;
-		}
-		return temp.data;
-	}
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class SinglyLinkedListNode {
+    public int data;
+    public SinglyLinkedListNode next;
+
+    public SinglyLinkedListNode(int nodeData) {
+        this.data = nodeData;
+        this.next = null;
+    }
 }
 
-public class Test {
+class SinglyLinkedList {
+    public SinglyLinkedListNode head;
+    public SinglyLinkedListNode tail;
 
-	public static void main(String[] args) throws Exception {
-    //  Making an instance of Mylinkedlist class.
-		MyLinkedlist<Integer> ll=new MyLinkedlist<Integer>();
-    //Adding elements to the linkedlist
-		ll.add(15);
-		ll.add(20);
-		ll.add(25);
-    
-		System.out.println("original linkedlist");
-    //Printing the elements of the linkedlist
-		ll.print();
-    
-    //Removing Last element of the  linkedlist
-		ll.removelast();
-    
-		System.out.println("updated linkedlist");
-		ll.print();
-    //getlast will return the last element of the linkedlist
-		System.out.println("last element :"+ll.getlast());
-		System.out.println(ll.isEmpty()+" returning false because linkedlist is not empty");
+    public SinglyLinkedList() {
+        this.head = null;
+        this.tail = null;
+    }
 
-	}
+    public void insertNode(int nodeData) {
+        SinglyLinkedListNode node = new SinglyLinkedListNode(nodeData);
 
+        if (this.head == null) {
+            this.head = node;
+        } else {
+            this.tail.next = node;
+        }
+
+        this.tail = node;
+    }
+}
+
+class SinglyLinkedListPrintHelper {
+    public static void printList(SinglyLinkedListNode node, String sep, BufferedWriter bufferedWriter) throws IOException {
+        while (node != null) {
+            bufferedWriter.write(String.valueOf(node.data));
+
+            node = node.next;
+
+            if (node != null) {
+                bufferedWriter.write(sep);
+            }
+        }
+    }
+}
+
+class Result {
+
+    /*
+     * Complete the 'reverse' function below.
+     *
+     * The function is expected to return an INTEGER_SINGLY_LINKED_LIST.
+     * The function accepts INTEGER_SINGLY_LINKED_LIST llist as parameter.
+     */
+
+    /*
+     * For your reference:
+     *
+     * SinglyLinkedListNode {
+     *     int data;
+     *     SinglyLinkedListNode next;
+     * }
+     *
+     */
+
+    public static SinglyLinkedListNode reverse(SinglyLinkedListNode head) {
+    // Write your code here
+        SinglyLinkedListNode next = null;
+        SinglyLinkedListNode current = head;
+        SinglyLinkedListNode previous = null;
+        while(current!=null)
+        {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        SinglyLinkedListNode singlyLinkedListNode = previous;
+        return singlyLinkedListNode;
+
+}
+
+
+    }
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int tests = Integer.parseInt(bufferedReader.readLine().trim());
+
+        IntStream.range(0, tests).forEach(testsItr -> {
+            try {
+                SinglyLinkedList llist = new SinglyLinkedList();
+
+                int llistCount = Integer.parseInt(bufferedReader.readLine().trim());
+
+                IntStream.range(0, llistCount).forEach(i -> {
+                    try {
+                        int llistItem = Integer.parseInt(bufferedReader.readLine().trim());
+
+                        llist.insertNode(llistItem);
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                });
+
+                SinglyLinkedListNode llist1 = Result.reverse(llist.head);
+
+                SinglyLinkedListPrintHelper.printList(llist1, " ", bufferedWriter);
+                bufferedWriter.newLine();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
 }
