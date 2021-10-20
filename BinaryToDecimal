@@ -1,0 +1,11 @@
+binaryval = input("What 8 bit binary value would you like to convert to decimal? ")
+i = 1
+bitval = 128
+totalval = 0
+while not(i==8):
+  if binaryval[i-1:i] == "1":
+    totalval = totalval + bitval
+  bitval = bitval/2
+  i = i+1
+print(i)
+print(totalval)
