@@ -1,0 +1,36 @@
+.square {
+  width: 98%;
+  height: 85px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+
+.layout{
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.column{
+  float: left;
+  width: 10%;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.move{
+    font-size: 65px;
+    margin-left: 20%;
+}
+
+.notification-container{
+    margin-left: -42%;
+    margin-top: -15;
+    position: absolute;
+    top: 0%;
+}
