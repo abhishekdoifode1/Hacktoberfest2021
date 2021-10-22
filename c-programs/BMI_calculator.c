@@ -1,15 +1,23 @@
+//simple program to calculate the Body Mass Index(BMI) of a person//
 #include <stdio.h>
+ 
+int main()
+{
+printf("This is a simple code to calculate BMI of a person\n");
 
-int main() {
-	  double x,y;
-	      printf("Enter your height in meter:");
-		    scanf("%lf",&x);
-		        printf("Enter your weight in KiloGrams (kg):");
-			    scanf("%lf",&y);
-			        double bmi=y/(x*x);
-				    printf("your BMI is : %lf", bmi);
+float h, w, BMI;
+printf("Enter persons weight in KG\n");
+scanf("%f", &w);
 
-				        return 0;
+printf("Enter persons height in Metre\n");
+scanf("%f",&h);
+
+BMI = w/(h*h);
+
+printf("BMI of the person is %.2f", BMI);
+return 0;
+}
+
 }
 
 
