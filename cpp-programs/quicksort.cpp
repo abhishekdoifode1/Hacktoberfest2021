@@ -61,4 +61,5 @@ int main()
 }
 
 
-
+//Time Complexity of Quick Sort is O(nlogn)
+//Edited by Suryamani Sudhakar
