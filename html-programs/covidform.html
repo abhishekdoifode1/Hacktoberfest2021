@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19 Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+<body>
+<center><H1>COVID-19</H1>
+<form name="myform">
+	<table>
+		<tr>
+			<td>
+            <p><H4><b>Full Name:</b></H4><input type = "text" id="Name" name = "name" maxlength="25" placeholder="Name"value="" ><br>
+	        </td>
+	    </tr> 
+	    <tr>
+	    	<td>
+            <p><H4><b>Age:</b></H4><input type = "number" id="Age" placeholder="Age"name = "age" maxlength="3" value=""><br>
+            </td>
+        </tr>
+        <tr>
+        	<td>
+          <p><H4><b>Gender:</b></H4>
+           <input type="radio"  id="Gender" value="male" name="Gender" checked>
+           <label for="Gender">Male</label>
+           <input type="radio" id="Gender" value="female" name="Gender">
+           <label for="Gender">Female</label>
+           <input type="radio" id="Gender" value="other" name="Gender">
+           <label for="Gender">Other</label>
+           </td>
+        </tr>
+        <tr>
+        	<td>
+            <p><H4><b>Symptoms You Have:</b></H4>
+                  <input type="checkbox" id="Symptoms" value="Fever" name="Symptoms">
+		          <label for="Symptoms"> Fever</label><br>
+                  <input type="checkbox" id="Symptoms"   value="throat pain" name="Symptoms">
+                  <label for="Symptoms"> Throat Pain</label><br>
+                  <input type="checkbox" id="Symptoms"  value="breathing issue" name="Symptoms">
+                  <label for="Symptoms"> Breathing Issue</label><br>
+                  <input type="checkbox" id="Symptoms"  value="tiredness" name="Symptoms">
+                  <label for="Symptoms"> Tiredness</label><br>
+                  <input type="checkbox" id="Symptoms"  value="body pain" name="Symptoms">
+		          <label for="Symptoms"> Body Pain</label><br>
+		    </td>      
+		</tr>          
+        <tr>
+        	<td>
+            <p><b>Address:</b><textarea rows="2" cols="50" name="Address" value="Address"></textarea>
+            </td>	
+	    </tr>
+	    <tr>
+	    	<td>
+                <nobr><label><b>Pincode:</b></label>
+                    <input type="number" name="Pincode" placeholder="Pincode"value="" maxlength="6"><br>
+            </td>
+        </tr> 
+        <tr>
+        	<td>            
+              <p><label for="district"><h4><b>Choose your District</b></h4></label><select name="district">
+	                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+	                <option value="Kollam">Kollam</option>
+					<option value="Pathanamthitta">Pathanamthitta</option>
+   					<option value="Alappuzha">Alappuzha</option>
+   					<option value="Kottayam">Kottayam</option>
+    				<option value="Idukki">Idukki</option>
+    				<option value="Ernakulam">Ernakulam</option>
+    				<option value="Thrissur">Thrissur</option>
+    				<option value="Palakkad">Palakkad</option>
+    				<option value="Malappuram">Malappuram</option>
+    				<option value="Kozhikode">Kozhikode</option>
+    				<option value="Wayanad">Wayanad</option>
+    				<option value="Kannur">Kannur</option>
+    				<option value="Kasaragod">Kasaragod</option>
+             </select><br><br>
+            </td>
+        </table>
+         <input type="submit" name="submit" onclick="check(); return false" >
+</form>     
+         
+</center>
+<!--The details you have entered-->
+<center>
+<table>
+    <tr><td>
+<p id="d1"></p>
+<p id="f1"></p>
+    </td></tr>
+    <tr><td>
+<p id="d2"></p>
+<p id="f2"></p>
+    </td></tr>
+    <tr><td>
+<p id="d3"></p>
+<p id="f3"></p>
+    </td></tr>
+    <tr><td>
+<p id="d4"></p>
+<p id="f4"></p>
+    </td></tr>
+    <tr><td>
+<p id="d5"></p>
+<p id="f5"></p>
+    </td></tr>
+    <tr><td>
+<p id="d6"></p>
+<p id="f6"></p>
+    </td></tr>
+    <tr><td>
+<p id="d7"></p>
+<p id="f7"></p>
+    </td></tr>
+</table>
+</center>
+</body>
+</html>
