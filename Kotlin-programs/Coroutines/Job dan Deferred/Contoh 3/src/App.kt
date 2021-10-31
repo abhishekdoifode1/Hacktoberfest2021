@@ -1,6 +1,7 @@
 import kotlinx.coroutines.*
 
 fun main() = runBlocking {
+    println ("Starting ...")
     val job = launch(start = CoroutineStart.LAZY) {
         delay(1000L)
         println("Start new job!")
