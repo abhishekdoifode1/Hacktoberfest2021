@@ -1,0 +1,19 @@
+{
+  "name": "simple-videochat-webrtc",
+  "version": "1.0.0",
+  "description": "Video Chat between 2 people using simple-peer",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
+  },
+  "author": "Vinayak Sinha",
+  "dependencies": {
+    "express": "^4.17.1",
+    "simple-peer": "^9.11.0",
+    "socket.io": "^2.4.1"
+  },
+  "devDependencies": {
+    "watchify": "^3.11.1"
+  }
+}
