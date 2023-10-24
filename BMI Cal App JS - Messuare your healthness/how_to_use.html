@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BMI CALCULATOR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--===============================================================================================-->
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container" id="naviLK">
+
+      <!--a style="font-family: calibri; font-size: 1.4em;" class="navbar-brand js-scroll-trigger" href="index.html"><i class="fa fa-calculator"></i> BMI CAL</a-->
+
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" width="100"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto myNav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="what_is_bmi.html"><i class="fa fa-balance-scale"></i> What is BMI?</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link js-scroll-trigger" href="#"><i class="fa fa-user"></i> How to use?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="about_app.html"><i class="fa fa-cog"></i> About App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-star"></i> Rate BMI CAL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+
+		<h1 class="animated bounceInLeft" style="color: white; margin-top: 30%;">How to use?</h1>
+		<img src="img/how to use.png" style="width: 100%; margin-top: 20px;" class="animated fadeIn">
+
+		<p class="para animated fadeIn">First enter your Weight in Kilograms & Height in Centimeters. Please enter valid data otherwise app doesn't recognize to your calculation.<br><br>After that click on the Calculate BMI button. Then app will display your BMI value & also app tells you to simple trick what you have to do now. If you scroll down you can see the more details about your BMI range. Such as what you have to do now, what are the foods you should eat & your health ranges.<br><br>Finally, if you want to calculate again you can click the Reset  All button. Then app clear  you to all data that you previously entered.</p><br>
+
+</div>
+
+<div class="container-fluid">
+	<img class="animated fadeIn" id="img" src="#" style="display: none; width: 100%; margin-bottom: 50px; margin-top: -40px; border-radius: 30px;">
+
+	<div style="margin-top: -5px;" class="applink">
+        <a href="index.html"><button id="btnReset" style="display: none;" class="reset" onmousedown="bleep.play()">Reset All</button></a><br>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+	//To play sound when user click the Calculate BMI button
+	var bleep = new Audio();
+	bleep.src = "sounds/audi.mp3"
+
+
+	function calculate() {
+
+
+		//Get the values
+		var weight = document.getElementById('weight').value;
+		var height = document.getElementById('height').value;
+
+
+
+  		//validation
+  		var weightvali = document.getElementById("weight");
+  		var heightvali = document.getElementById("height");
+
+			if(weight == "" || weight > 250 || weight < 1){
+				document.getElementById("errorWeight").innerHTML="Weight between 1kg to 250kg..!!";
+				weightvali.focus();
+	   			bmi.clear();
+			} 
+			else{
+				document.getElementById("errorWeight").innerHTML="";
+			}
+
+			if(height == "" || height > 350 || height < 10){
+				document.getElementById("errorHeight").innerHTML="Height between 10cm to 350cm..!!";
+				heightvali.focus();
+	   			bmi.clear();
+			} 
+			else{
+				document.getElementById("errorHeight").innerHTML="";
+			}
+
+
+
+		//Disabled the text inputs
+		if (weight == "" || weight > 250 || weight < 1) {
+			document.getElementById("weight").disabled=false;
+		}
+		else{
+			document.getElementById("weight").disabled=true;
+		}
+
+		if (height == "" || height > 350 || height < 10) {
+			document.getElementById("height").disabled=false;
+		}
+		else{
+			document.getElementById("height").disabled=true;
+		}
+
+
+		//To disabled the Calculate Button when user submit the form once
+		if (weight == "" || weight > 250 || weight < 1 || height == "" || height > 350 || height < 10){
+			$("#cal").attr("disabled", false);
+		}
+		else{
+			$("#cal").attr("disabled", true);
+		}
+
+
+
+		//document.getElementById("resultWrap").style.display="";
+
+		var bmi = weight/(height*height*0.0001);
+
+		document.getElementById("resultBMI").style.display="block";
+		document.getElementById("resultBMI").innerHTML=bmi.toFixed(3);
+
+
+		var element = document.getElementById("resultBMI");
+		var seeStatElement = document.getElementById("seeStat");
+
+		var sound1 = new Audio("sounds/sound_1.mp3");
+		var sound2 = new Audio("sounds/sound_2.mp3");
+		var sound3 = new Audio("sounds/sound_3.mp3");
+		var sound4 = new Audio("sounds/sound_4.mp3");
+
+		if(bmi<18.5){
+			element.style.backgroundColor = "#be1e2d";
+			seeStatElement.style.backgroundColor = "#be1e2d";
+			document.getElementById("seeStat").style.display="block";
+			document.getElementById("seeStat").innerHTML="YOU ARE UNDERWEIGHT..!!!<br>Scroll Down to view more.";
+			document.getElementById("img").style.display="block";
+			document.getElementById("img").src="img/a.jpg";
+			sound1.play();
+		}
+		else if(bmi>18.5 && bmi<24.9){
+			element.style.backgroundColor = "#00a550";
+			seeStatElement.style.backgroundColor = "#00a550";
+			document.getElementById("seeStat").style.display="block";
+			document.getElementById("seeStat").innerHTML="YOU ARE NORMAL WEIGHT.<br>Scroll Down to view more.";
+			document.getElementById("img").style.display="block";
+			document.getElementById("img").src="img/2.png";
+			sound2.play();
+		}
+		else if(bmi>25 && bmi<29.9){
+			element.style.backgroundColor = "#f49e2c";
+			seeStatElement.style.backgroundColor = "#f49e2c";
+			document.getElementById("seeStat").style.display="block";
+			document.getElementById("seeStat").innerHTML="YOU ARE OVERWEIGHT..!!<br>Scroll Down to view more.";
+			document.getElementById("img").style.display="block";
+			document.getElementById("img").src="img/b.jpg";
+			sound3.play();
+		}
+		else if(bmi>30){
+			element.style.backgroundColor = "#be1e2d";
+			seeStatElement.style.backgroundColor = "#be1e2d";
+			document.getElementById("seeStat").style.display="block";
+			document.getElementById("seeStat").innerHTML="YOU ARE OBESE..!!!<br>Scroll Down to view more.";
+			document.getElementById("img").style.display="block";
+			document.getElementById("img").src="img/4.png";	
+			sound4.play();
+		}
+
+		document.getElementById("btnReset").style.display="block";
+		
+	}
+
+
+</script>
+
+
+
+<!--===============================================================================================-->	
+	<script src="js/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+<!--===============================================================================================-->
+</body>
+</body>
+</html>
